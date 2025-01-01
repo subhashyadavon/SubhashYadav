@@ -8,7 +8,7 @@ const Hero = () => {
             <p>Thanks for visiting my profile! Scroll down for more information.</p>
             <div className='hero-action'>
             <div className='hero-connect'><AnchorLink className='anchor-link' offset={50} href='#contact'>Connect with me</AnchorLink></div>
-            <div className='hero-resume'> <a href='https://drive.google.com/file/d/17rx5oIyCTNj0RNW3yB6vMM0Wy6sirSdX/view'>My resume</a></div>
+            <div className='hero-resume'> <a href='https://drive.google.com/file/d/1agOuA7TRcgjK1-YJXTt5AlVQOpkrzw6R/view'>My resume</a></div>
             </div>
         </div>
     )
