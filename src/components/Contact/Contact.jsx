@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from "react";
+import { createPortal } from 'react-dom';
 import './Contact.css'
 import mail_icon from '../../assets/mail_icon.svg'
 import location_icon from '../../assets/location_icon.svg'
@@ -80,14 +81,15 @@ const Contact = () => {
             </div>
 
             {/* Success Dialog */}
-            {showDialog && (
+            {showDialog && createPortal(
                 <div className="dialog-overlay">
                     <div className="dialog-box">
                         <h3>Thank You!</h3>
                         <p>I will try to reach out as soon as possible.</p>
                         <button onClick={closeDialog}>Close</button>
                     </div>
-                </div>
+                </div>,
+                document.body
             )}
         </div>
     )

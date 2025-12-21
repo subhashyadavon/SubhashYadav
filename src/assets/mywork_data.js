@@ -1,6 +1,6 @@
-import project1_img from '../assets/project_1.jpg'
-import project2_img from '../assets/project_2.jpg'
-import project3_img from '../assets/project_3.jpg'
+import project1_img from '../assets/project_3.svg'
+import project2_img from '../assets/project_3.svg'
+import project3_img from '../assets/project_3.svg'
 
 const mywork_data = [
     {

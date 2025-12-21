@@ -1,0 +1,31 @@
+.click-ripple {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: radial-gradient(circle, var(--color-primary), transparent);
+    pointer-events: none;
+    transform: translate(-50%, -50%) scale(0);
+    animation: ripple-animation 0.6s ease-out;
+    z-index: 9999;
+}
+
+@keyframes ripple-animation {
+    0% {
+        transform: translate(-50%, -50%) scale(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(4);
+        opacity: 0;
+    }
+}
+
+/* Add subtle scale feedback to all clickable elements */
+button:active,
+a:active,
+.clickable:active {
+    transform: scale(0.95);
+    transition: transform 0.1s ease;
+}

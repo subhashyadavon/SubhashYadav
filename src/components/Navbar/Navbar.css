@@ -1,20 +1,61 @@
 .navbar {
     display: flex;
     align-items: center;
-    justify-content: center;
-    /* Center the menu since button is gone */
-    padding: 20px 0;
+    justify-content: space-between;
+    padding: 20px 40px;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
     transition: all 0.3s ease;
-    /* Removed background wrapper as requested */
 }
 
 .navbar-hidden {
     transform: translateY(-100%);
+}
+
+.social-icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    border: 2px solid var(--color-primary);
+    transition: all 0.3s ease;
+    box-shadow: 0 0 20px rgba(0, 243, 255, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.social-icon::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: translateY(-5px) rotate(360deg);
+    box-shadow: 0 0 30px rgba(0, 243, 255, 0.6);
+    border-color: var(--color-secondary);
+}
+
+.social-icon:hover::before {
+    opacity: 0.2;
+}
+
+.social-icon img {
+    width: 28px;
+    height: 28px;
+    position: relative;
+    z-index: 1;
 }
 
 .nav-menu {
@@ -79,23 +120,47 @@
 }
 
 /* Responsive */
+@media(max-width: 1024px) {
+    .navbar {
+        padding: 20px 30px;
+    }
+
+    .nav-menu {
+        gap: 10px;
+    }
+
+    .anchor-link {
+        font-size: 13px;
+        padding: 8px 16px;
+    }
+
+    .social-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 22px;
+    }
+}
+
 @media(max-width:768px) {
     .navbar {
-        justify-content: flex-end;
-        /* Mobile toggle on right */
+        justify-content: space-between;
         padding: 20px 30px;
-        background: transparent;
-        border: none;
-        pointer-events: none;
-        /* Let clicks pass through except on toggle */
+    }
+
+    .social-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
     }
 
     .nav-mob-open {
         display: block;
-        pointer-events: all;
         cursor: pointer;
         width: 30px;
         filter: drop-shadow(0 0 5px var(--color-primary));
+        position: absolute;
+        right: 50%;
+        transform: translateX(50%);
     }
 
     .nav-mob-close {
@@ -121,12 +186,36 @@
         z-index: 1001;
         transition: right 0.4s ease;
         border-radius: 0;
-        pointer-events: all;
         box-shadow: -5px 0 20px rgba(0, 0, 0, 0.5);
     }
 
     .nav-menu li {
         font-size: 24px;
         margin-left: 40px;
+    }
+}
+
+@media(max-width: 480px) {
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .social-icon {
+        width: 35px;
+        height: 35px;
+        font-size: 18px;
+    }
+
+    .nav-mob-open {
+        width: 25px;
+    }
+
+    .nav-menu {
+        width: 250px;
+    }
+
+    .nav-menu li {
+        font-size: 20px;
+        margin-left: 30px;
     }
 }
