@@ -6,7 +6,7 @@ const About = () => {
 
     const [showResumeDialog, setShowResumeDialog] = useState(false);
     // Resume URL
-    const resumeUrl = 'https://drive.google.com/file/d/1agOuA7TRcgjK1-YJXTt5AlVQOpkrzw6R/view';
+    const resumeUrl = 'https://drive.google.com/file/d/1Nj1cdCTstySe7Mk3m-G4MAfGy32YXsWr/view';
 
     const handleResumeClick = (e) => {
         e.preventDefault();
