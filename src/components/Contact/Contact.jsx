@@ -55,19 +55,25 @@ const Contact = () => {
         const object = Object.fromEntries(formData);
         const json = JSON.stringify(object);
 
-        const res = await fetch("https://api.web3forms.com/submit", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-                Accept: "application/json"
-            },
-            body: json
-        }).then((res) => res.json());
+        try {
+            const res = await fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    Accept: "application/json"
+                },
+                body: json
+            }).then((res) => res.json());
 
-
-        if (res.success) {
-            setShowDialog(true);
-            event.target.reset(); // Clear form
+            if (res.success) {
+                setShowDialog(true);
+                event.target.reset(); // Clear form
+                setErrors({}); // Clear any errors
+            } else {
+                setErrors({ submit: 'Failed to send message. Please try again.' });
+            }
+        } catch (error) {
+            setErrors({ submit: 'Network error. Please check your connection and try again.' });
         }
     };
 
@@ -110,6 +116,7 @@ const Contact = () => {
                             {errors.email && <span className="error-message">{errors.email}</span>}
                             <label htmlFor="">Write your message here</label>
                             <textarea name="message" row="8" placeholder='Enter your message' required></textarea>
+                            {errors.submit && <span className="error-message">{errors.submit}</span>}
                             <button type='submit' className="contact-submit">Submit Now</button>
                         </form>
                     </div>
