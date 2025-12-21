@@ -1,11 +1,11 @@
-.navbar{
+.navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 20px 170px;
 }
 
-.nav-menu{
+.nav-menu {
     display: flex;
     align-items: center;
     list-style: none;
@@ -13,73 +13,76 @@
     font-size: 20px;
 }
 
-.nav-connect{
+.nav-connect {
     padding: 10px 30px;
     border-radius: 50px;
-    background: linear-gradient(270deg, #080fdf 10%, #B415FF 100% );
+    background: linear-gradient(270deg, var(--color-primary) 10%, var(--color-secondary) 100%);
+    color: var(--color-bg);
+    font-weight: 600;
     font-size: 22px;
-    cursor:Pointer;
-}
-.nav-connect:hover{
-    transform:scale(1.05);
+    cursor: Pointer;
 }
 
-.nav-menu li{
+.nav-connect:hover {
+    transform: scale(1.05);
+}
+
+.nav-menu li {
     cursor: pointer;
 }
 
-.anchor-link{
+.anchor-link {
     text-decoration: none;
-    color:white;
+    color: white;
 }
 
-.nav-mob-close{
+.nav-mob-close {
     display: none;
 }
 
-.nav-mob-open{
+.nav-mob-open {
     display: none;
 }
 
-@media(max-width:768px){
-    .navbar{
+@media(max-width:768px) {
+    .navbar {
         margin: 20px 50px;
     }
 
-    .nav-connect{
+    .nav-connect {
         display: none;
     }
 
-    .nav-mob-open{
+    .nav-mob-open {
         display: block;
-        position:fixed ;
-        right:30px;
+        position: fixed;
+        right: 30px;
     }
 
-    .nav-mob-close{
-        display:block;
+    .nav-mob-close {
+        display: block;
         position: relative;
         top: 30px;
-        left:290px;
-        width :30px;
+        left: 290px;
+        width: 30px;
     }
 
-    .nav-menu{
+    .nav-menu {
         position: fixed;
         flex-direction: column;
         align-items: start;
         top: 0;
         gap: 30px;
-        background-color: #000000ee;
+        background-color: var(--color-bg);
         width: 350px;
-        height:100%;
+        height: 100%;
         z-index: 2;
         transition: right 0.5s;
         right: -350px;
 
     }
 
-    .nav-menu li{
+    .nav-menu li {
         font-size: 30px;
         padding-left: 100px;
         flex-direction: row;

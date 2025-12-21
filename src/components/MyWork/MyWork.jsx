@@ -1,28 +1,43 @@
 import React from 'react'
 import './MyWork.css'
 import mywork_data from '../../assets/mywork_data'
-import arrow_icon from '../../assets/arrow_icon.svg'
-const MyWork = () => {
-    return(
-        <div className='mywork'>
-            <div id='work' className="mywork-title">
-                <h1>My Work</h1>
-            </div>
-            <div className="mywork-container">
-                {mywork_data.map((work,index)=>{
-                    return <img key={index} src={work.w_img} alt="" />
-                })}
-                <div className="pro-1"><a href='https://github.com/Subhash1861815/Blockchain'>Click here for Github repo Link</a></div>
-                <div className="pro-2"><a href='https://github.com/rileydes/COMP3380'>Click here for Github repo Link</a></div>
-                <div className="pro-3"><a href='https://github.com/Subhash1861815/SubhashYadav'>Click here for Github repo Link</a></div>     
-            </div>    
-            
-            
-            <div className="mywork-showmore">
-                <p>Show More</p>
-                <img src={arrow_icon} alt="" />
-            </div>
 
+const MyWork = () => {
+    return (
+        <div className='mywork'>
+            <div className="mywork-wrapper">
+                <div id='work' className="mywork-title">
+                    <h1>Projects</h1>
+                </div>
+                <div className="glass-card">
+                    <div className="mywork-container">
+                        {mywork_data.map((work, index) => {
+                            return (
+                                <div key={index} className="project-card">
+                                    <div className="project-image-container">
+                                        <img src={work.w_img} alt={work.w_name} />
+                                        <div className="project-overlay">
+                                            <div className="project-links">
+                                                <a href={work.w_github} target="_blank" rel="noopener noreferrer" className="project-link github-link">
+                                                    GitHub
+                                                </a>
+                                                <a href={work.w_link} target="_blank" rel="noopener noreferrer" className="project-link demo-link">
+                                                    Live
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="project-info">
+                                        <h3>{work.w_name}</h3>
+                                        <p>{work.w_desc}</p>
+                                    </div>
+                                </div>
+                            )
+                        })}
+                    </div>
+
+                </div>
+            </div>
         </div>
     )
 }

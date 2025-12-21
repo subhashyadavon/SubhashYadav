@@ -1,0 +1,130 @@
+.experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    margin: 80px 10%;
+}
+
+.experience-wrapper {
+    width: 100%;
+    /* No max-width constraint to match standard */
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    align-items: center;
+}
+
+.experience-title {
+    position: relative;
+    text-align: center;
+}
+
+.experience-title h1 {
+    padding: 0px 30px;
+    font-size: 80px;
+    font-weight: 700;
+    background: linear-gradient(270deg, var(--color-primary), var(--color-secondary));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 30px rgba(0, 243, 255, 0.3);
+}
+
+.experience-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.experience-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: background 0.3s ease;
+}
+
+.experience-item:last-child {
+    border-bottom: none;
+}
+
+.experience-item:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.experience-logo {
+    font-size: 40px;
+    color: var(--color-primary);
+    width: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.experience-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.experience-info h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    margin: 0;
+}
+
+.experience-info h4 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #ccc;
+    margin: 0;
+}
+
+.experience-date,
+.experience-location {
+    font-size: 16px;
+    color: #888;
+    margin: 0;
+}
+
+.experience-edit {
+    color: #888;
+    font-size: 20px;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.experience-edit:hover {
+    color: var(--color-primary);
+}
+
+
+/* Responsive */
+@media(max-width:768px) {
+    .experience {
+        gap: 50px;
+        margin: 50px 20px;
+        align-items: center;
+    }
+
+    .experience-title h1 {
+        padding: 0;
+        font-size: 50px;
+        font-weight: 600;
+    }
+
+    .experience-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .experience-edit {
+        display: none;
+        /* Hide edit icon on mobile if space is tight, or keep it */
+    }
+}
