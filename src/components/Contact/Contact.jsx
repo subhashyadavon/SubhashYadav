@@ -52,11 +52,17 @@ const Contact = () => {
 
         formData.append("access_key", "80c64071-12a2-411d-b4f2-75ec97eaae4d");
 
+        const object = Object.fromEntries(formData);
+        const json = JSON.stringify(object);
+
         try {
-            // Using FormData directly is more robust for multi-part form submissions
             const response = await fetch("https://api.web3forms.com/submit", {
                 method: "POST",
-                body: formData
+                headers: {
+                    "Content-Type": "application/json",
+                    Accept: "application/json"
+                },
+                body: json
             });
 
             const res = await response.json();
@@ -71,7 +77,7 @@ const Contact = () => {
         } catch (error) {
             console.error('Detailed submission error:', error);
             setErrors({
-                submit: 'Network error. If you use an Ad-Blocker, please disable it for this site and try again.'
+                submit: 'Network error. Please check your internet connection.'
             });
         }
     };
