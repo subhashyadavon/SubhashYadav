@@ -18,8 +18,8 @@ const Contact = () => {
     };
 
     const validateName = (name) => {
-        // Only letters, spaces, hyphens, and apostrophes, minimum 2 characters
-        const nameRegex = /^[a-zA-Z\s'-]{2,}$/;
+        // Allow letters (including international), spaces, hyphens, and apostrophes, min 2 characters
+        const nameRegex = /^[\p{L}\s'-]{2,}$/u;
         return nameRegex.test(name.trim());
     };
 
@@ -56,25 +56,27 @@ const Contact = () => {
         const json = JSON.stringify(object);
 
         try {
-            const res = await fetch("https://api.web3forms.com/submit", {
+            const response = await fetch("https://api.web3forms.com/submit", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
                     Accept: "application/json"
                 },
                 body: json
-            }).then((res) => res.json());
+            });
+
+            const res = await response.json();
 
             if (res.success) {
                 setShowDialog(true);
                 event.target.reset(); // Clear form
                 setErrors({}); // Clear any errors
             } else {
-                setErrors({ submit: 'Failed to send message. Please try again.' });
+                setErrors({ submit: res.message || 'Failed to send message. Please try again.' });
             }
         } catch (error) {
             console.error('Form submission error:', error);
-            setErrors({ submit: 'Failed to send message. Please try again.' });
+            setErrors({ submit: 'Network error. Please check your connection or try again later.' });
         }
     };
 
