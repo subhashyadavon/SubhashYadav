@@ -73,7 +73,8 @@ const Contact = () => {
                 setErrors({ submit: 'Failed to send message. Please try again.' });
             }
         } catch (error) {
-            setErrors({ submit: 'Network error. Please check your connection and try again.' });
+            console.error('Form submission error:', error);
+            setErrors({ submit: 'Failed to send message. Please try again.' });
         }
     };
 
