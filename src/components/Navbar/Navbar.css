@@ -1,91 +1,132 @@
 .navbar {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin: 20px 170px;
+    justify-content: center;
+    /* Center the menu since button is gone */
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: all 0.3s ease;
+    /* Removed background wrapper as requested */
+}
+
+.navbar-hidden {
+    transform: translateY(-100%);
 }
 
 .nav-menu {
     display: flex;
     align-items: center;
     list-style: none;
-    gap: 40px;
-    font-size: 20px;
-}
-
-.nav-connect {
-    padding: 10px 30px;
+    gap: 15px;
+    /* Reduced gap since buttons are wider */
+    padding: 10px 20px;
     border-radius: 50px;
-    background: linear-gradient(270deg, var(--color-primary) 10%, var(--color-secondary) 100%);
-    color: var(--color-bg);
-    font-weight: 600;
-    font-size: 22px;
-    cursor: Pointer;
+    background: rgba(10, 10, 10, 0.8);
+    backdrop-filter: blur(20px);
+    border: 2px solid transparent;
+    /* Gradient border trick */
+    background-image: linear-gradient(rgba(10, 10, 10, 0.9), rgba(10, 10, 10, 0.9)),
+        linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
 }
 
-.nav-connect:hover {
-    transform: scale(1.05);
+.nav-menu:hover {
+    transform: translateY(2px);
+    box-shadow: 0 15px 40px rgba(0, 243, 255, 0.1);
 }
 
 .nav-menu li {
     cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease;
 }
 
 .anchor-link {
     text-decoration: none;
-    color: white;
+    color: var(--color-text);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    display: block;
 }
 
-.nav-mob-close {
+.nav-menu li:hover .anchor-link {
+    background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+    color: black;
+    box-shadow: 0 0 15px rgba(0, 243, 255, 0.5);
+    transform: scale(1.05);
+}
+
+/* Remove old underline */
+.nav-menu li::after {
     display: none;
 }
 
+.nav-mob-close,
 .nav-mob-open {
     display: none;
 }
 
+/* Responsive */
 @media(max-width:768px) {
     .navbar {
-        margin: 20px 50px;
-    }
-
-    .nav-connect {
-        display: none;
+        justify-content: flex-end;
+        /* Mobile toggle on right */
+        padding: 20px 30px;
+        background: transparent;
+        border: none;
+        pointer-events: none;
+        /* Let clicks pass through except on toggle */
     }
 
     .nav-mob-open {
         display: block;
-        position: fixed;
-        right: 30px;
+        pointer-events: all;
+        cursor: pointer;
+        width: 30px;
+        filter: drop-shadow(0 0 5px var(--color-primary));
     }
 
     .nav-mob-close {
         display: block;
-        position: relative;
-        top: 30px;
-        left: 290px;
         width: 30px;
+        cursor: pointer;
+        margin: 30px;
+        filter: drop-shadow(0 0 5px var(--color-secondary));
     }
 
     .nav-menu {
         position: fixed;
         flex-direction: column;
-        align-items: start;
+        align-items: flex-start;
         top: 0;
-        gap: 30px;
-        background-color: var(--color-bg);
-        width: 350px;
-        height: 100%;
-        z-index: 2;
-        transition: right 0.5s;
         right: -350px;
-
+        width: 300px;
+        height: 100vh;
+        background: rgba(10, 10, 10, 0.95);
+        backdrop-filter: blur(20px);
+        padding: 0;
+        gap: 30px;
+        z-index: 1001;
+        transition: right 0.4s ease;
+        border-radius: 0;
+        pointer-events: all;
+        box-shadow: -5px 0 20px rgba(0, 0, 0, 0.5);
     }
 
     .nav-menu li {
-        font-size: 30px;
-        padding-left: 100px;
-        flex-direction: row;
-        gap: 20px;
+        font-size: 24px;
+        margin-left: 40px;
     }
 }

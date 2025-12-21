@@ -2,14 +2,20 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 35px;
+    gap: 30px;
+    margin: 50px 170px 150px 170px;
+    /* Increased bottom margin for gap */
+    padding-top: 150px;
 }
 
 .hero h1 {
     text-align: center;
-    width: 70%;
+    width: 100%;
+    /* Changed from 70% to 100% */
     font-size: 90px;
     font-weight: 600;
+    white-space: nowrap;
+    /* Force one line */
 }
 
 .hero h1 span {
@@ -64,6 +70,52 @@
 
 .hero-resume:hover {
     border: 2px solid var(--color-primary);
+}
+
+/* Scroll Chevrons Animation */
+.scroll-chevrons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.scroll-chevrons span {
+    width: 30px;
+    height: 30px;
+    border-bottom: 5px solid var(--color-primary);
+    border-right: 5px solid var(--color-primary);
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: scrollFade 2s infinite;
+    opacity: 0;
+    filter: drop-shadow(0 0 5px var(--color-primary));
+}
+
+.scroll-chevrons span:nth-child(2) {
+    animation-delay: -0.2s;
+    border-color: var(--color-secondary);
+    filter: drop-shadow(0 0 5px var(--color-secondary));
+}
+
+.scroll-chevrons span:nth-child(3) {
+    animation-delay: -0.4s;
+}
+
+@keyframes scrollFade {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+    }
 }
 
 /* Intro Animation CSS */

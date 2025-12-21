@@ -42,7 +42,8 @@
 
 .mywork-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
+    /* Force 2 per row as requested */
     gap: 40px;
     width: 100%;
 }
@@ -67,7 +68,8 @@
 .project-image-container {
     position: relative;
     width: 100%;
-    height: 200px;
+    height: 300px;
+    /* Increased from 200px */
     overflow: hidden;
 }
 
@@ -162,5 +164,9 @@
     .mywork-title img {
         width: 130px;
         margin-right: -20px;
+    }
+
+    .mywork-container {
+        grid-template-columns: 1fr;
     }
 }

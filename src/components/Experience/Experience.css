@@ -5,24 +5,19 @@
     justify-content: center;
     gap: 60px;
     margin: 80px 10%;
+    position: relative;
+    z-index: 1;
 }
 
 .experience-wrapper {
     width: 100%;
-    /* No max-width constraint to match standard */
     display: flex;
     flex-direction: column;
     gap: 60px;
     align-items: center;
 }
 
-.experience-title {
-    position: relative;
-    text-align: center;
-}
-
 .experience-title h1 {
-    padding: 0px 30px;
     font-size: 80px;
     font-weight: 700;
     background: linear-gradient(270deg, var(--color-primary), var(--color-secondary));
@@ -36,31 +31,112 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    position: relative;
+    padding-left: 30px;
+    /* Space for the line */
 }
 
+/* Vertical Line */
+.experience-line {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    /* Center of the padding area */
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--color-primary), var(--color-secondary));
+    box-shadow: 0 0 10px var(--color-primary);
+    border-radius: 2px;
+}
+
+/* Experience Item */
 .experience-item {
+    position: relative;
+    margin-bottom: 50px;
+    width: 100%;
+    opacity: 0;
+    animation: slideInRight 0.5s ease forwards;
+}
+
+.experience-item:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.experience-item:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.experience-item:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+/* Timeline Dot */
+.timeline-dot {
+    position: absolute;
+    left: -23px;
+    /* Align with the line */
+    top: 25px;
+    width: 16px;
+    height: 16px;
+    background: var(--color-bg);
+    border: 3px solid var(--color-primary);
+    border-radius: 50%;
+    z-index: 2;
+    box-shadow: 0 0 10px var(--color-primary);
+    transition: all 0.3s ease;
+}
+
+.experience-item:hover .timeline-dot {
+    background: var(--color-secondary);
+    border-color: var(--color-secondary);
+    box-shadow: 0 0 20px var(--color-secondary);
+    transform: scale(1.3);
+}
+
+/* Content Box */
+.experience-content {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     gap: 20px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.01) 100%);
+    /* Subtle gradient */
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
     padding: 30px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    transition: background 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-left: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-.experience-item:last-child {
-    border-bottom: none;
-}
-
-.experience-item:hover {
-    background: rgba(255, 255, 255, 0.05);
+.experience-item:hover .experience-content {
+    transform: translateX(10px);
+    box-shadow: 0 0 25px rgba(0, 243, 255, 0.2);
+    border-color: var(--color-primary);
+    background: linear-gradient(135deg, rgba(0, 243, 255, 0.05) 0%, rgba(188, 19, 254, 0.05) 100%);
+    /* Color shift on hover */
 }
 
 .experience-logo {
-    font-size: 40px;
+    font-size: 35px;
     color: var(--color-primary);
     width: 60px;
+    height: 60px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(0, 243, 255, 0.2);
+    border: 1px solid rgba(0, 243, 255, 0.3);
+}
+
+.experience-item:hover .experience-logo {
+    color: var(--color-secondary);
+    transform: rotate(360deg);
+    transition: transform 0.6s ease;
+    box-shadow: 0 0 20px rgba(188, 19, 254, 0.4);
+    border-color: var(--color-secondary);
 }
 
 .experience-info {
@@ -72,59 +148,81 @@
 
 .experience-info h3 {
     font-size: 24px;
-    font-weight: 600;
-    color: #fff;
+    font-weight: 700;
     margin: 0;
+    background: linear-gradient(90deg, var(--color-primary), #fff);
+    /* Gradient text */
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .experience-info h4 {
     font-size: 18px;
     font-weight: 500;
-    color: #ccc;
+    color: #fff;
+    /* Bright white */
     margin: 0;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.experience-date,
 .experience-location {
-    font-size: 16px;
-    color: #888;
+    font-size: 14px;
+    color: #aaa;
     margin: 0;
 }
 
-.experience-edit {
-    color: #888;
-    font-size: 20px;
-    cursor: pointer;
-    transition: color 0.2s;
-}
-
-.experience-edit:hover {
+/* Date Bubble */
+.experience-date {
+    background: rgba(0, 243, 255, 0.1);
     color: var(--color-primary);
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    border: 1px solid var(--color-primary);
+    transition: all 0.3s ease;
+    white-space: nowrap;
 }
 
+.experience-item:hover .experience-date {
+    background: var(--color-secondary);
+    color: black;
+    border-color: var(--color-secondary);
+    box-shadow: 0 0 15px var(--color-secondary);
+}
+
+/* Animations */
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
 
 /* Responsive */
 @media(max-width:768px) {
     .experience {
-        gap: 50px;
-        margin: 50px 20px;
-        align-items: center;
+        padding: 0 20px;
+        margin: 50px 0;
     }
 
     .experience-title h1 {
-        padding: 0;
         font-size: 50px;
-        font-weight: 600;
     }
 
-    .experience-item {
+    .experience-content {
         flex-direction: column;
         align-items: flex-start;
         gap: 15px;
     }
 
-    .experience-edit {
-        display: none;
-        /* Hide edit icon on mobile if space is tight, or keep it */
+    .experience-date {
+        align-self: flex-start;
     }
 }

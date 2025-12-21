@@ -19,10 +19,10 @@ const MyWork = () => {
                                         <div className="project-overlay">
                                             <div className="project-links">
                                                 <a href={work.w_github} target="_blank" rel="noopener noreferrer" className="project-link github-link">
-                                                    GitHub
+                                                    <i className="fa-brands fa-github"></i> GitHub
                                                 </a>
                                                 <a href={work.w_link} target="_blank" rel="noopener noreferrer" className="project-link demo-link">
-                                                    Live
+                                                    <i className="fa-solid fa-arrow-up-right-from-square"></i> Live
                                                 </a>
                                             </div>
                                         </div>
