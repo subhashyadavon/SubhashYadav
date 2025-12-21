@@ -9,6 +9,8 @@ import call_icon from '../../assets/call_icon.svg'
 const Contact = () => {
 
 
+    const [showDialog, setShowDialog] = useState(false);
+
     const onSubmit = async (event) => {
         event.preventDefault();
         const formData = new FormData(event.target);
@@ -29,10 +31,14 @@ const Contact = () => {
 
 
         if (res.success) {
-            alert(res.message);
-
+            setShowDialog(true);
+            event.target.reset(); // Clear form
         }
     };
+
+    const closeDialog = () => {
+        setShowDialog(false);
+    }
 
     return (
         <div id='contact' className='contact'>
@@ -62,16 +68,27 @@ const Contact = () => {
                         </div>
                         <form onSubmit={onSubmit} className='contact-right'>
                             <label htmlFor="">Your Name</label>
-                            <input type="text" placeholder='Enter your name' name='name' />
+                            <input type="text" placeholder='Enter your name' name='name' required />
                             <label htmlFor="">Your Email</label>
-                            <input type="email" placeholder='Enter your email' name='email' />
+                            <input type="email" placeholder='Enter your email' name='email' required />
                             <label htmlFor="">Write your message here</label>
-                            <textarea name="message" row="8" placeholder='Enter your message'></textarea>
+                            <textarea name="message" row="8" placeholder='Enter your message' required></textarea>
                             <button type='submit' className="contact-submit">Submit Now</button>
                         </form>
                     </div>
                 </div>
             </div>
+
+            {/* Success Dialog */}
+            {showDialog && (
+                <div className="dialog-overlay">
+                    <div className="dialog-box">
+                        <h3>Thank You!</h3>
+                        <p>I will try to reach out as soon as possible.</p>
+                        <button onClick={closeDialog}>Close</button>
+                    </div>
+                </div>
+            )}
         </div>
     )
 }
