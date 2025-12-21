@@ -54,23 +54,23 @@ const About = () => {
         formData.append("access_key", "80c64071-12a2-411d-b4f2-75ec97eaae4d");
         formData.append("subject", "New Resume Request");
 
-        const object = Object.fromEntries(formData);
-        const json = JSON.stringify(object);
+        try {
+            const response = await fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                body: formData
+            });
 
-        const res = await fetch("https://api.web3forms.com/submit", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-                Accept: "application/json"
-            },
-            body: json
-        }).then((res) => res.json());
+            const res = await response.json();
 
-        if (res.success) {
-            setShowResumeDialog(false);
-            window.open(resumeUrl, '_blank');
-        } else {
-            alert("Something went wrong. Please try again.");
+            if (res.success) {
+                setShowResumeDialog(false);
+                window.open(resumeUrl, '_blank');
+            } else {
+                alert(res.message || "Something went wrong. Please try again.");
+            }
+        } catch (error) {
+            console.error('Resume request error:', error);
+            alert("Network error. If you use an Ad-Blocker, please disable it for this site and try again.");
         }
     };
 

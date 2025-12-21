@@ -25,9 +25,12 @@ const Contact = () => {
 
     const onSubmit = async (event) => {
         event.preventDefault();
-        const formData = new FormData(event.target);
+        setErrors({});
 
-        // Get form values
+        const form = event.target;
+        const formData = new FormData(form);
+
+        // Get form values for validation
         const name = formData.get('name');
         const email = formData.get('email');
 
@@ -35,7 +38,7 @@ const Contact = () => {
         const newErrors = {};
 
         if (!validateName(name)) {
-            newErrors.name = 'Please enter a valid name (letters only, minimum 2 characters)';
+            newErrors.name = 'Please enter a valid name (minimum 2 characters)';
         }
 
         if (!validateEmail(email)) {
@@ -47,36 +50,29 @@ const Contact = () => {
             return;
         }
 
-        // Clear errors if validation passes
-        setErrors({});
-
         formData.append("access_key", "80c64071-12a2-411d-b4f2-75ec97eaae4d");
 
-        const object = Object.fromEntries(formData);
-        const json = JSON.stringify(object);
-
         try {
+            // Using FormData directly is more robust for multi-part form submissions
             const response = await fetch("https://api.web3forms.com/submit", {
                 method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                    Accept: "application/json"
-                },
-                body: json
+                body: formData
             });
 
             const res = await response.json();
 
             if (res.success) {
                 setShowDialog(true);
-                event.target.reset(); // Clear form
-                setErrors({}); // Clear any errors
+                form.reset();
+                setErrors({});
             } else {
-                setErrors({ submit: res.message || 'Failed to send message. Please try again.' });
+                setErrors({ submit: res.message || 'Submission failed. Please check your Access Key.' });
             }
         } catch (error) {
-            console.error('Form submission error:', error);
-            setErrors({ submit: 'Network error. Please check your connection or try again later.' });
+            console.error('Detailed submission error:', error);
+            setErrors({
+                submit: 'Network error. If you use an Ad-Blocker, please disable it for this site and try again.'
+            });
         }
     };
 
