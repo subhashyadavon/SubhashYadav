@@ -9,12 +9,46 @@ import call_icon from '../../assets/call_icon.svg'
 
 const Contact = () => {
 
-
     const [showDialog, setShowDialog] = useState(false);
+    const [errors, setErrors] = useState({});
+
+    const validateEmail = (email) => {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email);
+    };
+
+    const validateName = (name) => {
+        // Only letters, spaces, hyphens, and apostrophes, minimum 2 characters
+        const nameRegex = /^[a-zA-Z\s'-]{2,}$/;
+        return nameRegex.test(name.trim());
+    };
 
     const onSubmit = async (event) => {
         event.preventDefault();
         const formData = new FormData(event.target);
+
+        // Get form values
+        const name = formData.get('name');
+        const email = formData.get('email');
+
+        // Validate
+        const newErrors = {};
+
+        if (!validateName(name)) {
+            newErrors.name = 'Please enter a valid name (letters only, minimum 2 characters)';
+        }
+
+        if (!validateEmail(email)) {
+            newErrors.email = 'Please enter a valid email address';
+        }
+
+        if (Object.keys(newErrors).length > 0) {
+            setErrors(newErrors);
+            return;
+        }
+
+        // Clear errors if validation passes
+        setErrors({});
 
         formData.append("access_key", "80c64071-12a2-411d-b4f2-75ec97eaae4d");
 
@@ -70,8 +104,10 @@ const Contact = () => {
                         <form onSubmit={onSubmit} className='contact-right'>
                             <label htmlFor="">Your Name</label>
                             <input type="text" placeholder='Enter your name' name='name' required />
+                            {errors.name && <span className="error-message">{errors.name}</span>}
                             <label htmlFor="">Your Email</label>
                             <input type="email" placeholder='Enter your email' name='email' required />
+                            {errors.email && <span className="error-message">{errors.email}</span>}
                             <label htmlFor="">Write your message here</label>
                             <textarea name="message" row="8" placeholder='Enter your message' required></textarea>
                             <button type='submit' className="contact-submit">Submit Now</button>

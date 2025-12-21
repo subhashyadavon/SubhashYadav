@@ -5,17 +5,52 @@ import './About.css'
 const About = () => {
 
     const [showResumeDialog, setShowResumeDialog] = useState(false);
+    const [resumeErrors, setResumeErrors] = useState({});
     // Resume URL
     const resumeUrl = 'https://drive.google.com/file/d/1Nj1cdCTstySe7Mk3m-G4MAfGy32YXsWr/view';
+
+    const validateEmail = (email) => {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email);
+    };
+
+    const validateOrganization = (org) => {
+        // Allow letters, numbers, spaces, and common punctuation, minimum 2 characters
+        const orgRegex = /^[a-zA-Z0-9\s.,'&-]{2,}$/;
+        return orgRegex.test(org.trim());
+    };
 
     const handleResumeClick = (e) => {
         e.preventDefault();
         setShowResumeDialog(true);
+        setResumeErrors({}); // Clear errors when opening dialog
     };
 
     const onResumeRequest = async (event) => {
         event.preventDefault();
         const formData = new FormData(event.target);
+
+        const organization = formData.get('organization');
+        const email = formData.get('email');
+
+        // Validate
+        const newErrors = {};
+
+        if (!validateOrganization(organization)) {
+            newErrors.organization = 'Please enter a valid organization name';
+        }
+
+        if (!validateEmail(email)) {
+            newErrors.email = 'Please enter a valid email address';
+        }
+
+        if (Object.keys(newErrors).length > 0) {
+            setResumeErrors(newErrors);
+            return;
+        }
+
+        // Clear errors if validation passes
+        setResumeErrors({});
         formData.append("access_key", "80c64071-12a2-411d-b4f2-75ec97eaae4d");
         formData.append("subject", "New Resume Request");
 
