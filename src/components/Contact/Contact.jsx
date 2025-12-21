@@ -11,6 +11,7 @@ const Contact = () => {
 
     const [showDialog, setShowDialog] = useState(false);
     const [errors, setErrors] = useState({});
+    const [isSubmitting, setIsSubmitting] = useState(false);
 
     const validateEmail = (email) => {
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -50,6 +51,7 @@ const Contact = () => {
             return;
         }
 
+        setIsSubmitting(true);
         formData.append("access_key", "80c64071-12a2-411d-b4f2-75ec97eaae4d");
 
         const object = Object.fromEntries(formData);
@@ -79,6 +81,8 @@ const Contact = () => {
             setErrors({
                 submit: 'Network error. Please check your internet connection.'
             });
+        } finally {
+            setIsSubmitting(false);
         }
     };
 
@@ -122,7 +126,9 @@ const Contact = () => {
                             <label htmlFor="">Write your message here</label>
                             <textarea name="message" row="8" placeholder='Enter your message' required></textarea>
                             {errors.submit && <span className="error-message">{errors.submit}</span>}
-                            <button type='submit' className="contact-submit">Submit Now</button>
+                            <button type='submit' className="contact-submit" disabled={isSubmitting}>
+                                {isSubmitting ? 'Sending...' : 'Submit Now'}
+                            </button>
                         </form>
                     </div>
                 </div>

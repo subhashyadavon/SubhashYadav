@@ -6,6 +6,7 @@ const About = () => {
 
     const [showResumeDialog, setShowResumeDialog] = useState(false);
     const [resumeErrors, setResumeErrors] = useState({});
+    const [isSubmitting, setIsSubmitting] = useState(false);
     // Resume URL
     const resumeUrl = 'https://drive.google.com/file/d/1Nj1cdCTstySe7Mk3m-G4MAfGy32YXsWr/view';
 
@@ -51,6 +52,7 @@ const About = () => {
 
         // Clear errors if validation passes
         setResumeErrors({});
+        setIsSubmitting(true);
         formData.append("access_key", "80c64071-12a2-411d-b4f2-75ec97eaae4d");
         formData.append("subject", "New Resume Request");
 
@@ -78,6 +80,8 @@ const About = () => {
         } catch (error) {
             console.error('Resume request error:', error);
             alert("Network error. Please check your internet connection.");
+        } finally {
+            setIsSubmitting(false);
         }
     };
 
@@ -107,7 +111,9 @@ const About = () => {
                         <p>Please enter your details to view my resume.</p>
                         <input type="text" name="organization" placeholder="Organization Name" required />
                         <input type="email" name="email" placeholder="Your Email" required />
-                        <button type="submit">View Resume</button>
+                        <button type="submit" disabled={isSubmitting}>
+                            {isSubmitting ? 'Requesting...' : 'View Resume'}
+                        </button>
                         <button type="button" onClick={() => setShowResumeDialog(false)} style={{ background: 'transparent', border: '1px solid #fff', marginTop: '-10px' }}>Cancel</button>
                     </form>
                 </div>,
