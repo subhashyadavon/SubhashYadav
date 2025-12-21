@@ -74,7 +74,11 @@ const Contact = () => {
                 form.reset();
                 setErrors({});
             } else {
-                setErrors({ submit: res.message || 'Submission failed. Please check your Access Key.' });
+                // Handle specific rate limit error from Web3Forms
+                const errorMessage = res.message && res.message.includes('Rate limited')
+                    ? 'Rate limit reached. Please try again after one hour.'
+                    : (res.message || 'Submission failed. Please try again.');
+                setErrors({ submit: errorMessage });
             }
         } catch (error) {
             console.error('Detailed submission error:', error);

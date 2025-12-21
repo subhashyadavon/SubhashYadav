@@ -75,7 +75,11 @@ const About = () => {
                 setShowResumeDialog(false);
                 window.open(resumeUrl, '_blank');
             } else {
-                alert(res.message || "Something went wrong. Please try again.");
+                // Handle specific rate limit error from Web3Forms
+                const errorMessage = res.message && res.message.includes('Rate limited')
+                    ? 'Rate limit reached. Please try again after one hour.'
+                    : (res.message || 'Something went wrong. Please try again.');
+                alert(errorMessage);
             }
         } catch (error) {
             console.error('Resume request error:', error);
