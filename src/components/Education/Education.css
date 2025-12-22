@@ -134,6 +134,22 @@
     font-size: 16px;
     color: #aaa;
     margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.education-coursework {
+    font-size: 15px;
+    color: #cccccc;
+    line-height: 1.6;
+    background: rgba(255, 255, 255, 0.03);
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.education-coursework strong {
+    color: var(--color-primary);
+    margin-right: 5px;
 }
 
 .education-date {

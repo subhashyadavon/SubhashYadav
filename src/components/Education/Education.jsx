@@ -19,6 +19,9 @@ const Education = () => {
                                     <h3>Bachelor of Computer Science, Minor in Mathematics</h3>
                                     <h4>University of Manitoba</h4>
                                     <p className="education-location">Winnipeg, Canada</p>
+                                    <div className="education-coursework">
+                                        <strong>Relevant Courses:</strong> Software Engineering 2, Human Computer Interaction, Databases, Distributed Systems, Operating Systems, Data Structures and Algorithms 3, Object-Oriented Programming, Artificial Intelligence 1, Machine Learning 1, etc.
+                                    </div>
                                 </div>
                                 <div className="education-date">September 2022 - December 2026</div>
                             </div>
