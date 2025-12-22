@@ -1,5 +1,5 @@
 import project1_img from '../assets/project_3.svg'
-import project2_img from '../assets/project_3.svg'
+import project2_img from '../assets/project2.png'
 import project3_img from '../assets/project_3.svg'
 import project6_img from '../assets/project6.png'
 
@@ -14,10 +14,10 @@ const mywork_data = [
     },
     {
         w_no: 2,
-        w_name: "Neon Dashboard",
-        w_desc: "High-performance analytics dashboard with real-time data visualization.",
+        w_name: "CarDex",
+        w_desc: "Cardex is a digital trading card game where players collect, trade, and race cars. ",
         w_img: project2_img,
-        w_github: "https://github.com",
+        w_github: "https://github.com/subhashyadavon/Cardex",
         w_link: "https://google.com"
     },
     {
