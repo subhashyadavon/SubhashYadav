@@ -32,7 +32,7 @@ const mywork_data = [
         w_no: 4,
         w_name: "Cyber Security Tool",
         w_desc: "Network vulnerability scanner designed for modern enterprise infrastructure.",
-        w_img: project1_img,
+        w_img: project3_img,
         w_github: "https://github.com",
         w_link: "https://google.com"
     },
@@ -40,7 +40,7 @@ const mywork_data = [
         w_no: 5,
         w_name: "Cloud Nexus",
         w_desc: "Scalable cloud management interface for deploying microservices.",
-        w_img: project2_img,
+        w_img: project3_img,
         w_github: "https://github.com",
         w_link: "https://google.com"
     },
