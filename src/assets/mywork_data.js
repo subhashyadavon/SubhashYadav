@@ -1,4 +1,4 @@
-import project1_img from '../assets/project_3.svg'
+import project1_img from '../assets/project1.png'
 import project2_img from '../assets/project2.png'
 import project3_img from '../assets/project_3.svg'
 import project6_img from '../assets/project6.png'
@@ -6,10 +6,10 @@ import project6_img from '../assets/project6.png'
 const mywork_data = [
     {
         w_no: 1,
-        w_name: "Project Alpha",
-        w_desc: "A futuristic web application focusing on decentralized finance solutions.",
+        w_name: "RAG Chat App",
+        w_desc: "An intelligent chat application that combines speech-to-text, vector search, and retrieval-augmented generation (RAG) to enable natural, voice-driven conversations.",
         w_img: project1_img,
-        w_github: "https://github.com",
+        w_github: "https://github.com/subhashyadavon/voice-driven-qna-bot.git",
         w_link: "https://google.com"
     },
     {
