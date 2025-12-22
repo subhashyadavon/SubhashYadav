@@ -1,6 +1,7 @@
 import project1_img from '../assets/project_3.svg'
 import project2_img from '../assets/project_3.svg'
 import project3_img from '../assets/project_3.svg'
+import project6_img from '../assets/project6.png'
 
 const mywork_data = [
     {
@@ -45,11 +46,11 @@ const mywork_data = [
     },
     {
         w_no: 6,
-        w_name: "Quantum Chat",
-        w_desc: "Secure messaging app utilizing quantum encryption algorithms.",
-        w_img: project3_img,
-        w_github: "https://github.com",
-        w_link: "https://google.com"
+        w_name: "Healthy Receipe",
+        w_desc: "A smart, AI-powered application that suggests healthy recipes based on the ingredients you have—just by uploading a photo.",
+        w_img: project6_img,
+        w_github: "https://github.com/subhashyadavon/HealthyReceipe.git",
+        w_link: "https://healthyreceipegit-dy3sbap7rezfp8mveyykr4.streamlit.app/"
     },
 ]
 
