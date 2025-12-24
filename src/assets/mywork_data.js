@@ -26,7 +26,8 @@ const mywork_data = [
         w_desc: "Machine learning integration platform for automated decision making.",
         w_img: project3_img,
         w_github: "https://github.com",
-        w_link: "https://google.com"
+        w_link: "https://google.com",
+        isUnderImplementation: true
     },
     {
         w_no: 4,
@@ -34,7 +35,8 @@ const mywork_data = [
         w_desc: "Network vulnerability scanner designed for modern enterprise infrastructure.",
         w_img: project3_img,
         w_github: "https://github.com",
-        w_link: "https://google.com"
+        w_link: "https://google.com",
+        isUnderImplementation: true
     },
     {
         w_no: 5,
@@ -42,7 +44,8 @@ const mywork_data = [
         w_desc: "Scalable cloud management interface for deploying microservices.",
         w_img: project3_img,
         w_github: "https://github.com",
-        w_link: "https://google.com"
+        w_link: "https://google.com",
+        isUnderImplementation: true
     },
     {
         w_no: 6,

@@ -13,16 +13,23 @@ const MyWork = () => {
                 <div className="glass-card">
                     <div className="mywork-container">
                         {mywork_data.map((work, index) => {
+                            const handleProjectClick = (e) => {
+                                if (work.isUnderImplementation) {
+                                    e.preventDefault();
+                                    alert("This project is currently under implementation.");
+                                }
+                            };
+
                             return (
                                 <div key={index} className="project-card">
                                     <div className="project-image-container">
                                         <img src={work.w_img} alt={work.w_name} />
                                         <div className="project-overlay">
                                             <div className="project-links">
-                                                <a href={work.w_github} target="_blank" rel="noopener noreferrer" className="project-link github-link">
+                                                <a href={work.w_github} onClick={handleProjectClick} target="_blank" rel="noopener noreferrer" className="project-link github-link">
                                                     <i className="fa-brands fa-github"></i> GitHub
                                                 </a>
-                                                <a href={work.w_link} target="_blank" rel="noopener noreferrer" className="project-link demo-link">
+                                                <a href={work.w_link} onClick={handleProjectClick} target="_blank" rel="noopener noreferrer" className="project-link demo-link">
                                                     <i className="fa-solid fa-arrow-up-right-from-square"></i> Live
                                                 </a>
                                             </div>
