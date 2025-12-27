@@ -1,7 +1,7 @@
 import project1_img from '../assets/project1.png'
 import project2_img from '../assets/project2.png'
 import ustep_img from '../assets/project3.png'
-import placeholder_img from '../assets/project_3.svg'
+import project3_svg from '../assets/project3.svg'
 import project6_img from '../assets/project6.png'
 
 const mywork_data = [
@@ -33,7 +33,7 @@ const mywork_data = [
         w_no: 4,
         w_name: "Cyber Security Tool",
         w_desc: "Network vulnerability scanner designed for modern enterprise infrastructure.",
-        w_img: placeholder_img,
+        w_img: project3_svg,
         w_github: "https://github.com",
         w_link: "https://google.com",
         isUnderImplementation: true
@@ -42,7 +42,7 @@ const mywork_data = [
         w_no: 5,
         w_name: "Cloud Nexus",
         w_desc: "Scalable cloud management interface for deploying microservices.",
-        w_img: placeholder_img,
+        w_img: project3_svg,
         w_github: "https://github.com",
         w_link: "https://google.com",
         isUnderImplementation: true
