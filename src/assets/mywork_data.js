@@ -1,6 +1,7 @@
 import project1_img from '../assets/project1.png'
 import project2_img from '../assets/project2.png'
-import project3_img from '../assets/project3.png'
+import ustep_img from '../assets/project3.png'
+import placeholder_img from '../assets/project_3.svg'
 import project6_img from '../assets/project6.png'
 
 const mywork_data = [
@@ -24,7 +25,7 @@ const mywork_data = [
         w_no: 3,
         w_name: "UStep",
         w_desc: "UStep is a student-focused academic application designed to simplify course management, grade tracking, and academic planning. It enables students to monitor their current and future grades, view courses offered, and explore peer-submitted course reviews to make informed decisions about their studies.",
-        w_img: project3_img,
+        w_img: ustep_img,
         w_github: "https://github.com/subhashyadavon/ustep",
         w_link: "https://google.com"
     },
@@ -32,7 +33,7 @@ const mywork_data = [
         w_no: 4,
         w_name: "Cyber Security Tool",
         w_desc: "Network vulnerability scanner designed for modern enterprise infrastructure.",
-        w_img: project3_img,
+        w_img: placeholder_img,
         w_github: "https://github.com",
         w_link: "https://google.com",
         isUnderImplementation: true
@@ -41,7 +42,7 @@ const mywork_data = [
         w_no: 5,
         w_name: "Cloud Nexus",
         w_desc: "Scalable cloud management interface for deploying microservices.",
-        w_img: project3_img,
+        w_img: placeholder_img,
         w_github: "https://github.com",
         w_link: "https://google.com",
         isUnderImplementation: true
