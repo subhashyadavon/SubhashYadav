@@ -12,7 +12,8 @@ const mywork_data = [
         w_desc: "An intelligent chat application that combines speech-to-text, vector search, and retrieval-augmented generation (RAG) to enable natural, voice-driven conversations.",
         w_img: project1_img,
         w_github: "https://github.com/subhashyadavon/voice-driven-qna-bot.git",
-        w_link: "https://google.com"
+        w_link: "#",
+        w_link_label: "under process for deployment"
     },
     {
         w_no: 2,
@@ -20,7 +21,8 @@ const mywork_data = [
         w_desc: "Cardex is a digital trading card game where players collect, trade, and race cars. ",
         w_img: project2_img,
         w_github: "https://github.com/subhashyadavon/Cardex",
-        w_link: "https://google.com"
+        w_link: "#",
+        w_link_label: "under process for deployment"
     },
     {
         w_no: 3,
@@ -28,7 +30,8 @@ const mywork_data = [
         w_desc: "UStep is a student-focused academic application designed to simplify course management, grade tracking, and academic planning. It enables students to monitor their current and future grades, view courses offered, and explore peer-submitted course reviews to make informed decisions about their studies.",
         w_img: ustep_img,
         w_github: "https://github.com/subhashyadavon/ustep",
-        w_link: "https://google.com"
+        w_link: "#",
+        w_link_label: "under process for play store release"
     },
     {
         w_no: 4,

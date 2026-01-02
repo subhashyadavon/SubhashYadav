@@ -29,8 +29,13 @@ const MyWork = () => {
                                                 <a href={work.w_github} onClick={handleProjectClick} target="_blank" rel="noopener noreferrer" className="project-link github-link">
                                                     <i className="fa-brands fa-github"></i> GitHub
                                                 </a>
-                                                <a href={work.w_link} onClick={handleProjectClick} target="_blank" rel="noopener noreferrer" className="project-link demo-link">
-                                                    <i className="fa-solid fa-arrow-up-right-from-square"></i> Live
+                                                <a href={work.w_link} onClick={(e) => {
+                                                    if (work.isUnderImplementation || (work.w_link_label && work.w_link_label.includes("under process"))) {
+                                                        e.preventDefault();
+                                                        alert(work.isUnderImplementation ? "This project is currently under implementation." : `This project is ${work.w_link_label}.`);
+                                                    }
+                                                }} target="_blank" rel="noopener noreferrer" className="project-link demo-link">
+                                                    <i className="fa-solid fa-arrow-up-right-from-square"></i> {work.w_link_label || "Live"}
                                                 </a>
                                             </div>
                                         </div>
