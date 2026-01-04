@@ -2,6 +2,7 @@ import project1_img from '../assets/project1.png'
 import project2_img from '../assets/project2.png'
 import ustep_img from '../assets/project3.png'
 import project4_img from '../assets/project4.png'
+import project5_img from '../assets/project5.png'
 import project3_svg from '../assets/project3.svg'
 import project6_img from '../assets/project6.png'
 
@@ -43,12 +44,12 @@ const mywork_data = [
     },
     {
         w_no: 5,
-        w_name: "Cloud Nexus",
-        w_desc: "Scalable cloud management interface for deploying microservices.",
-        w_img: project3_svg,
-        w_github: "https://github.com",
-        w_link: "https://google.com",
-        isUnderImplementation: true
+        w_name: "IMDB Sentiment Analysis",
+        w_desc: "a web application that demonstrates a movie review sentiment classifier built using TF-IDF and Logistic Regression. Users can type in an IMDB movie review and see whether the sentiment is Positive or Negative.",
+        w_img: project5_img,
+        w_github: "https://github.com/subhashyadavon/imdb_nlp.git",
+        w_link: "#",
+        w_link_label: "under process"
     },
     {
         w_no: 6,
