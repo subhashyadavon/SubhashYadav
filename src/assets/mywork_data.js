@@ -48,8 +48,7 @@ const mywork_data = [
         w_desc: "A web application that demonstrates a movie review sentiment classifier built using TF-IDF and Logistic Regression. Users can type in an IMDB movie review and see whether the sentiment is Positive or Negative.",
         w_img: project5_img,
         w_github: "https://github.com/subhashyadavon/imdb_nlp.git",
-        w_link: "#",
-        w_link_label: "under process"
+        w_link: "https://github.com/subhashyadavon/imdb_nlp/pkgs/container/imdb-nlp"
     },
     {
         w_no: 6,
