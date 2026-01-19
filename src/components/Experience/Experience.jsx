@@ -27,7 +27,7 @@ const Experience = () => {
                                         <li>Designing distributed ML architectures comparing centralized vs on-premises processing with YOLOv8 and GStreamer, ensuring fail-secure operation, data privacy, and reliable alerting for customer property safety.</li>
                                     </ul>
                                 </div>
-                                <div className="experience-date">January 2026 -- Present</div>
+                                <div className="experience-date">January 2026 - Present</div>
                             </div>
                         </div>
 
@@ -46,7 +46,7 @@ const Experience = () => {
                                         <li>Engaging with the Kafka community on stream processing challenges, learning about distributed systems patterns, and collaborating on initiatives to improve the platform's reliability and performance.</li>
                                     </ul>
                                 </div>
-                                <div className="experience-date">September 2025 -- Present</div>
+                                <div className="experience-date">September 2025 - Present</div>
                             </div>
                         </div>
 
