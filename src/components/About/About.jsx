@@ -98,7 +98,7 @@ const About = () => {
             <div className="about-me-section">
                 <div className="about-card about-intro">
                     <h3>A bit about me</h3>
-                    <p>Fourth-year Computer Science student passionate about building full-scale systems and AI/ML solutions. Experienced in open-source contributions and developing impactful projects through strong problem-solving, coding, and collaboration skills.</p>
+                    <p>Final-year Computer Science student passionate about building full-scale systems and AI/ML solutions. Currently developing computer vision systems for real-time surveillance and contributing to Apache Kafka, with proven expertise in distributed systems, machine learning, and open-source collaboration.</p>
                     <div className="resume-container">
                         <a href={resumeUrl} onClick={handleResumeClick} className="resume-btn">
                             Check out my Resume
