@@ -45,7 +45,7 @@ const Experience = () => {
                                         <li>Contributing to open-source projects like Apache Airflow, LangChain, and Kafka to learn large-scale and distributed systems.</li>
                                     </ul>
                                 </div>
-                                <div className="experience-date">September 2026 - Present</div>
+                                <div className="experience-date">September 2025 - Present</div>
                             </div>
                         </div>
 
