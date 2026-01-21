@@ -8,7 +8,7 @@ const About = () => {
     const [resumeErrors, setResumeErrors] = useState({});
     const [isSubmitting, setIsSubmitting] = useState(false);
     // Resume URL
-    const resumeUrl = 'https://drive.google.com/file/d/13vmTLckGp4_qzufcUbHrX25kmhkK00-h/view?usp=sharing';
+    const resumeUrl = 'https://drive.google.com/file/d/1G9pj_gHWLVIQ7kA9On2vsoj89ZzCh9t7/view?usp=sharing';
 
     const validateEmail = (email) => {
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
