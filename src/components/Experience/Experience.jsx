@@ -39,13 +39,13 @@ const Experience = () => {
                                 </div>
                                 <div className="experience-info">
                                     <h3>Open-Source Contributor</h3>
-                                    <h4>Open Source Community| <a href="https://github.com/subhashyadavon" target="_blank" rel="noreferrer" style={{ textDecoration: 'underline', color: 'inherit' }}>GitHub</a></h4>
+                                    <h4>Open Source Community | <a href="https://github.com/subhashyadavon" target="_blank" rel="noreferrer" style={{ textDecoration: 'underline', color: 'inherit' }}>GitHub</a></h4>
                                     <p className="experience-location">Remote</p>
                                     <ul className="experience-description">
                                         <li>Contributing to open-source projects like Apache Airflow, LangChain, and Kafka to learn large-scale and distributed systems.</li>
                                     </ul>
                                 </div>
-                                <div className="experience-date">January 2026 - Present</div>
+                                <div className="experience-date">September 2026 - Present</div>
                             </div>
                         </div>
 
