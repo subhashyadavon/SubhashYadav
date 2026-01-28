@@ -19,12 +19,12 @@ const Experience = () => {
                                     <i className="fa-solid fa-video"></i>
                                 </div>
                                 <div className="experience-info">
-                                    <h3>Machine Learning Engineer</h3>
+                                    <h3>Applied AI Systems Engineer</h3>
                                     <h4>BIL Security Service Ltd.</h4>
                                     <p className="experience-location">Winnipeg, Canada</p>
                                     <ul className="experience-description">
                                         <li>Developing a computer vision solution to reduce false alarms in CCTV surveillance by distinguishing critical events (humans, vehicles, illegal activity) from environmental noise, evaluating trade-offs between clip-based and RTSP streaming approaches.</li>
-                                        <li>Designing distributed ML architectures comparing centralized vs on-premises processing with YOLOv8 and GStreamer, ensuring fail-secure operation, data privacy, and reliable alerting for customer property safety.</li>
+                                        <li>Designing distributed architectures comparing centralized vs on-premises processing with YOLOv8 and GStreamer, ensuring fail-secure operation, data privacy, and reliable alerting for customer property safety.</li>
                                     </ul>
                                 </div>
                                 <div className="experience-date">January 2026 - Present</div>
