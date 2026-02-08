@@ -21,7 +21,7 @@ const mywork_data = [
         w_name: "CarDex",
         w_desc: "Cardex is a digital trading card game where players collect, trade, and race cars. ",
         w_img: project2_img,
-        w_github: "https://github.com/subhashyadavon/Cardex",
+        w_github: "https://github.com/subhashyadavon/CarDex-Prod",
         w_medium: "https://medium.com/p/9433319f9bd2?postPublishedType=initial",
         w_link: "#",
         w_link_label: "under process for deployment"
