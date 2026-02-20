@@ -7,7 +7,7 @@ const Footer = () => {
             <div className="footer-top">
                 <div className="footer-bottom">
                     <div className="footer-bottom-down">
-                        <p>Made with love ❤️ by Subhash Yadav</p>
+                        <p>© 2026 Subhash Yadav. All rights reserved.</p>
                     </div>
                 </div>
             </div>
