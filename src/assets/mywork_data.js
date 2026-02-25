@@ -33,9 +33,7 @@ const mywork_data = [
         w_img: ustep_img,
         w_github: "https://github.com/subhashyadavon/ustep",
         w_medium: "https://medium.com/p/598c8edbbba6?postPublishedType=initial",
-        w_apk: "https://drive.google.com/file/d/1KFODnr0fi8JvtacVrN0B5JMXcYUgxL-5/view?usp=sharing",
-        w_link: "#",
-        w_link_label: "under process for play store release"
+        w_apk: "https://drive.google.com/file/d/1KFODnr0fi8JvtacVrN0B5JMXcYUgxL-5/view?usp=sharing"
     },
     {
         w_no: 4,
