@@ -32,6 +32,8 @@ const mywork_data = [
         w_desc: "UStep is a student-focused academic application designed to simplify course management, grade tracking, and academic planning. It enables students to monitor their current and future grades, view courses offered, and explore peer-submitted course reviews to make informed decisions about their studies.",
         w_img: ustep_img,
         w_github: "https://github.com/subhashyadavon/ustep",
+        w_medium: "https://medium.com/p/598c8edbbba6?postPublishedType=initial",
+        w_apk: "https://drive.google.com/file/d/1KFODnr0fi8JvtacVrN0B5JMXcYUgxL-5/view?usp=sharing",
         w_link: "#",
         w_link_label: "under process for play store release"
     },

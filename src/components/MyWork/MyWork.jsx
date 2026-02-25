@@ -34,6 +34,11 @@ const MyWork = () => {
                                                         <i className="fa-brands fa-medium"></i> Medium
                                                     </a>
                                                 )}
+                                                {work.w_apk && (
+                                                    <a href={work.w_apk} target="_blank" rel="noopener noreferrer" className="project-link demo-link">
+                                                        <i className="fa-brands fa-android"></i> APK
+                                                    </a>
+                                                )}
                                                 <a href={work.w_link} onClick={(e) => {
                                                     if (work.isUnderImplementation || (work.w_link_label && work.w_link_label.includes("under process"))) {
                                                         e.preventDefault();
