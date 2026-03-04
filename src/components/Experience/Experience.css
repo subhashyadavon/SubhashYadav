@@ -52,8 +52,9 @@
 
 .tab-btn.active {
     background: linear-gradient(270deg, var(--color-primary), var(--color-secondary));
-    border: 2px solid transparent;
-    background-clip: padding-box;
+    border: none;
+    padding: 14px 32px;
+    /* Compensate for 2px border removal */
     box-shadow: 0 0 15px rgba(0, 243, 255, 0.4);
 }
 
