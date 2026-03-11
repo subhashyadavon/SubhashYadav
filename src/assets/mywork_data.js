@@ -23,8 +23,7 @@ const mywork_data = [
         w_img: project2_img,
         w_github: "https://github.com/subhashyadavon/CarDex-Prod",
         w_medium: "https://medium.com/p/9433319f9bd2?postPublishedType=initial",
-        w_link: "#",
-        w_link_label: "under process for deployment"
+        w_link: "https://app-cardex.azurewebsites.net/"
     },
     {
         w_no: 3,
