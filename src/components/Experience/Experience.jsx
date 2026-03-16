@@ -41,24 +41,6 @@ const Experience = () => {
                                 <div className="timeline-dot"></div>
                                 <div className="experience-content">
                                     <div className="experience-logo">
-                                        <i className="fa-brands fa-apache"></i>
-                                    </div>
-                                    <div className="experience-info">
-                                        <h3>Open-Source Contributor</h3>
-                                        <h4>Open Source Community | <a href="https://github.com/subhashyadavon" target="_blank" rel="noreferrer" style={{ textDecoration: 'underline', color: 'inherit' }}>GitHub</a></h4>
-                                        <p className="experience-location">Remote</p>
-                                        <ul className="experience-description">
-                                            <li>Contributing to open-source projects like Apache Airflow, LangChain, and Kafka to learn large-scale and distributed systems.</li>
-                                        </ul>
-                                    </div>
-                                    <div className="experience-date">September 2025 - Present</div>
-                                </div>
-                            </div>
-
-                            <div className="experience-item">
-                                <div className="timeline-dot"></div>
-                                <div className="experience-content">
-                                    <div className="experience-logo">
                                         <i className="fa-solid fa-brain"></i>
                                     </div>
                                     <div className="experience-info">
@@ -103,6 +85,24 @@ const Experience = () => {
                     {activeTab === 'other' && (
                         <div className="experience-container fade-in">
                             <div className="experience-line"></div> {/* Vertical line */}
+
+                            <div className="experience-item">
+                                <div className="timeline-dot"></div>
+                                <div className="experience-content">
+                                    <div className="experience-logo">
+                                        <i className="fa-brands fa-apache"></i>
+                                    </div>
+                                    <div className="experience-info">
+                                        <h3>Open-Source Contributor</h3>
+                                        <h4>Open Source Community | <a href="https://github.com/subhashyadavon" target="_blank" rel="noreferrer" style={{ textDecoration: 'underline', color: 'inherit' }}>GitHub</a></h4>
+                                        <p className="experience-location">Remote</p>
+                                        <ul className="experience-description">
+                                            <li>Contributing to open-source projects like Apache Airflow, LangChain, and Kafka to learn large-scale and distributed systems.</li>
+                                        </ul>
+                                    </div>
+                                    <div className="experience-date">September 2025 - Present</div>
+                                </div>
+                            </div>
 
                             <div className="experience-item">
                                 <div className="timeline-dot"></div>
