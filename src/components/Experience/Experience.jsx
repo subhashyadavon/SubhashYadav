@@ -19,6 +19,12 @@ const Experience = () => {
                         Technical Experience
                     </button>
                     <button
+                        className={`tab-btn ${activeTab === 'industrial' ? 'active' : ''}`}
+                        onClick={() => setActiveTab('industrial')}
+                    >
+                        Industrial Projects
+                    </button>
+                    <button
                         className={`tab-btn ${activeTab === 'other' ? 'active' : ''}`}
                         onClick={() => setActiveTab('other')}
                     >
@@ -30,25 +36,6 @@ const Experience = () => {
                     {activeTab === 'technical' && (
                         <div className="experience-container fade-in">
                             <div className="experience-line"></div> {/* Vertical line */}
-
-                            <div className="experience-item">
-                                <div className="timeline-dot"></div>
-                                <div className="experience-content">
-                                    <div className="experience-logo">
-                                        <i className="fa-solid fa-video"></i>
-                                    </div>
-                                    <div className="experience-info">
-                                        <h3>Applied AI Systems Engineer</h3>
-                                        <h4>BIL Security Service Ltd.</h4>
-                                        <p className="experience-location">Winnipeg, Canada</p>
-                                        <ul className="experience-description">
-                                            <li>Developing a computer vision solution to reduce false alarms in CCTV surveillance by distinguishing critical events (humans, vehicles, illegal activity) from environmental noise, evaluating trade-offs between clip-based and RTSP streaming approaches.</li>
-                                            <li>Designing distributed architectures comparing centralized vs on-premises processing with YOLOv8 and GStreamer, ensuring fail-secure operation, data privacy, and reliable alerting for customer property safety.</li>
-                                        </ul>
-                                    </div>
-                                    <div className="experience-date">January 2026 - Present</div>
-                                </div>
-                            </div>
 
                             <div className="experience-item">
                                 <div className="timeline-dot"></div>
@@ -86,6 +73,30 @@ const Experience = () => {
                                 </div>
                             </div>
 
+                        </div>
+                    )}
+                    {activeTab === 'industrial' && (
+                        <div className="experience-container fade-in">
+                            <div className="experience-line"></div> {/* Vertical line */}
+
+                            <div className="experience-item">
+                                <div className="timeline-dot"></div>
+                                <div className="experience-content">
+                                    <div className="experience-logo">
+                                        <i className="fa-solid fa-video"></i>
+                                    </div>
+                                    <div className="experience-info">
+                                        <h3>Applied AI Systems Engineer</h3>
+                                        <h4>BIL Security Service Ltd.</h4>
+                                        <p className="experience-location">Winnipeg, Canada</p>
+                                        <ul className="experience-description">
+                                            <li>Developing a computer vision solution to reduce false alarms in CCTV surveillance by distinguishing critical events (humans, vehicles, illegal activity) from environmental noise, evaluating trade-offs between clip-based and RTSP streaming approaches.</li>
+                                            <li>Designing distributed architectures comparing centralized vs on-premises processing with YOLOv8 and GStreamer, ensuring fail-secure operation, data privacy, and reliable alerting for customer property safety.</li>
+                                        </ul>
+                                    </div>
+                                    <div className="experience-date">January 2026 - Present</div>
+                                </div>
+                            </div>
                         </div>
                     )}
 
