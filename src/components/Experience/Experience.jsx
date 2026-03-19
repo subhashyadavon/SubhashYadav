@@ -72,8 +72,11 @@ const Experience = () => {
                                         <h4>BIL Security Service Ltd.</h4>
                                         <p className="experience-location">Winnipeg, Canada</p>
                                         <ul className="experience-description">
-                                            <li>Developing a computer vision solution to reduce false alarms in CCTV surveillance by distinguishing critical events (humans, vehicles, illegal activity) from environmental noise, evaluating trade-offs between clip-based and RTSP streaming approaches.</li>
-                                            <li>Designing distributed architectures comparing centralized vs on-premises processing with YOLOv8 and GStreamer, ensuring fail-secure operation, data privacy, and reliable alerting for customer property safety.</li>
+                                            <li>Designed and implemented a benchmarking pipeline to evaluate multiple object detection models (YOLOv8-Nano, YOLOv8-Small, YOLOv5-Nano, EfficientDet-D0, SSD-MobileNet) on CPU-constrained hardware, measuring FPS, latency, CPU, and memory usage.</li>
+                                            <li>Analyzed model performance trade-offs between speed and accuracy, identifying optimal models for real-time CCTV inference under limited resource constraints.</li>
+                                            <li>Developed object detection workflows to identify people and vehicles, generating bounding boxes with confidence scores and validating detection consistency across varied video scenarios.</li>
+                                            <li>Evaluated system architecture trade-offs (on-premises vs. centralized processing, clip-based vs. RTSP streaming) and recommended an edge-based, event-driven inference approach.</li>
+                                            <li>Assessed communication protocols (HTTP vs. WebSocket) for edge-to-server interaction, recommending HTTP for reliable event-based uploads under unstable network conditions.</li>
                                         </ul>
                                     </div>
                                     <div className="experience-date">January 2026 - Present</div>
@@ -97,7 +100,8 @@ const Experience = () => {
                                         <h4>Open Source Community | <a href="https://github.com/subhashyadavon" target="_blank" rel="noreferrer" style={{ textDecoration: 'underline', color: 'inherit' }}>GitHub</a></h4>
                                         <p className="experience-location">Remote</p>
                                         <ul className="experience-description">
-                                            <li>Contributing to open-source projects like Apache Airflow, LangChain, and Kafka to learn large-scale and distributed systems.</li>
+                                            <li>Contributed to Apache Kafka by identifying and fixing bugs, submitting pull requests, and improving documentation, gaining exposure to large-scale distributed system design and codebases.</li>
+                                            <li>Collaborated with global contributors on stream processing initiatives, analyzing system behavior and proposing improvements to enhance reliability and performance.</li>
                                         </ul>
                                     </div>
                                     <div className="experience-date">September 2025 - Present</div>
