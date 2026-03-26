@@ -100,8 +100,8 @@ const Experience = () => {
                                         <h4>Open Source Community | <a href="https://github.com/subhashyadavon" target="_blank" rel="noreferrer" style={{ textDecoration: 'underline', color: 'inherit' }}>GitHub</a></h4>
                                         <p className="experience-location">Remote</p>
                                         <ul className="experience-description">
-                                            <li>Contributed to Apache Kafka by identifying and fixing bugs, submitting pull requests, and improving documentation, gaining exposure to large-scale distributed system design and codebases.</li>
-                                            <li>Collaborated with global contributors on stream processing initiatives, analyzing system behavior and proposing improvements to enhance reliability and performance.</li>
+                                            <li>Contributed to LangChain, Apache Kafka, and Apache Airflow by identifying and fixing bugs, submitting pull requests, and improving documentation, gaining hands-on exposure to LLM integrations, distributed event streaming, and workflow orchestration at scale.</li>
+                                            <li>Collaborated with global open-source contributors on stream processing, DAG scheduling, and retrieval-augmented generation (RAG) initiatives, analyzing system behavior and proposing improvements to enhance reliability and performance.</li>
                                         </ul>
                                     </div>
                                     <div className="experience-date">September 2025 - Present</div>
