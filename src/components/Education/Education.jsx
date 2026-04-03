@@ -18,7 +18,7 @@ const Education = () => {
                                 <div className="education-info">
                                     <div className="education-header">
                                         <h3>Bachelor of Computer Science, Minor in Mathematics</h3>
-                                        <div className="education-date">September 2022 - December 2026</div>
+                                        <div className="education-date">September 2022 - April 2027 (Expected)</div>
                                     </div>
                                     <h4>University of Manitoba</h4>
                                     <p className="education-location">Winnipeg, Canada</p>
