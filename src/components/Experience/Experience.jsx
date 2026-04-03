@@ -72,11 +72,11 @@ const Experience = () => {
                                         <h4>BIL Security Service Ltd.</h4>
                                         <p className="experience-location">Winnipeg, Canada</p>
                                         <ul className="experience-description">
-                                            <li>Designed and implemented a benchmarking pipeline to evaluate multiple object detection models (YOLOv8-Nano, YOLOv8-Small, YOLOv5-Nano, EfficientDet-D0, SSD-MobileNet) on CPU-constrained hardware, measuring FPS, latency, CPU, and memory usage.</li>
-                                            <li>Analyzed model performance trade-offs between speed and accuracy, identifying optimal models for real-time CCTV inference under limited resource constraints.</li>
-                                            <li>Developed object detection workflows to identify people and vehicles, generating bounding boxes with confidence scores and validating detection consistency across varied video scenarios.</li>
-                                            <li>Evaluated system architecture trade-offs (on-premises vs. centralized processing, clip-based vs. RTSP streaming) and recommended an edge-based, event-driven inference approach.</li>
-                                            <li>Assessed communication protocols (HTTP vs. WebSocket) for edge-to-server interaction, recommending HTTP for reliable event-based uploads under unstable network conditions.</li>
+                                            <li>Boosted real-time detection accuracy by 112% (from 34% baseline to 72.1% mAP) by performing site-specific fine-tuning on a proprietary dataset of 53 high-definition CCTV clips.</li>
+                                            <li>Reduced hardware infrastructure costs by 100% by optimizing YOLOv8 models with Intel OpenVINO, achieving 30+ FPS (real-time) on standard i5/i7 CPUs and eliminating the need for expensive NVIDIA GPU upgrades.</li>
+                                            <li>Architected a scalable edge-to-cloud security pipeline capable of monitoring 10 simultaneous camera feeds on a single i7 machine with a minimal 450MB RAM footprint.</li>
+                                            <li>Designed and implemented an automated benchmarking suite to evaluate model trade-offs (YOLOv5/v8, EfficientDet, SSD) across four hardware metrics: FPS, latency, CPU utilization, and peak memory usage.</li>
+                                            <li>Engineered a resilient event-driven communication layer using HTTP protocols, ensuring 100% reliable event delivery of intrusion alerts from the edge to the server under unstable network conditions.</li>
                                         </ul>
                                     </div>
                                     <div className="experience-date">January 2026 - Present</div>
