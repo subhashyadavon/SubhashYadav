@@ -79,7 +79,7 @@ const Experience = () => {
                                             <li>Engineered a resilient event-driven communication layer using HTTP protocols, ensuring 100% reliable event delivery of intrusion alerts from the edge to the server under unstable network conditions.</li>
                                         </ul>
                                     </div>
-                                    <div className="experience-date">January 2026 - Present</div>
+                                    <div className="experience-date">January 2026 - April 2026</div>
                                 </div>
                             </div>
                         </div>
