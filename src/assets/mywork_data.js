@@ -39,8 +39,8 @@ const mywork_data = [
         w_name: "HCI To-Do App",
         w_desc: "A To-Do web app made in a group that demonstrates key Human–Computer Interaction (HCI) principles through a simple, intuitive, and user-centered design.",
         w_img: project4_img,
-        w_github: "https://github.com/Ivy-Ding/todo-app",
-        w_link: "https://ivy-ding.github.io/todo-app/"
+        w_github: "https://github.com/subhashyadavon/todo-app",
+        w_link: "https://subhashyadavon.github.io/todo-app/"
     },
     {
         w_no: 5,
