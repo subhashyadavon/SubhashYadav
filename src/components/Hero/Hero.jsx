@@ -36,7 +36,7 @@ const Hero = () => {
         <section id='home' className='hero'>
             <div className="hero-content">
                 <div className="hero-text-container">
-                    <h1>Hi, I'm <span className="highlight">Subhash Yadav</span></h1>
+                    <h1><span className="highlight">Subhash Yadav</span></h1>
                     <h2 className="typing-text">I am a <span>{text}</span><span className="cursor">|</span></h2>
                     <SocialLinks />
                 </div>

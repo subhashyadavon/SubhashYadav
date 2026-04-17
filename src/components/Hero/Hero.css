@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-start; /* Align content to the left */
-    padding-left: 120px; /* Indent to clear the floating sidebar icons */
+    padding-left: 180px; /* Indent even more as requested */
     width: 100vw; /* Span full viewport width */
     margin-left: 0;
     
@@ -42,18 +42,18 @@
 
 .hero h1 {
     font-size: 4rem;
-    color: var(--color-text);
+    color: #000000; /* Totally black */
     border: none;
     margin-bottom: 0.5rem;
 }
 
 .hero h1 .highlight {
-    color: var(--color-accent);
+    color: #000000; /* Name is now black too */
 }
 
 .typing-text {
     font-size: 2.2rem;
-    color: #4a5568;
+    color: #000000; /* Totally black */
     margin-top: 0;
     margin-bottom: 2rem;
     border: none;
