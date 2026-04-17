@@ -72,8 +72,8 @@
 
 .image-wrapper {
     position: relative;
-    width: 380px;
-    height: 380px;
+    width: 450px;
+    height: 450px;
     border-radius: 50%;
     overflow: hidden;
     border: 5px solid var(--color-accent);
@@ -102,7 +102,7 @@
     }
 
     .image-wrapper {
-        width: 300px;
-        height: 300px;
+        width: 350px;
+        height: 350px;
     }
 }
