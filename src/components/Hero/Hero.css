@@ -6,7 +6,7 @@
     padding-top: 0;
     
     /* Pexels Background */
-    background-image: url('https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg');
+    background-image: url('../../assets/pexels-simona-522599730-31005544.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -19,7 +19,7 @@
     content: "";
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(255, 255, 255, 0.7); /* Light overlay to mute the background slightly */
+    background: rgba(255, 255, 255, 0.9); /* Very light overlay so background is faintly visible */
     z-index: 0;
 }
 
