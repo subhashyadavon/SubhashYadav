@@ -55,16 +55,7 @@
     50% { opacity: 0; }
 }
 
-.hero-tagline {
-    font-size: 1.25rem;
-    color: #64748b;
-    max-width: 600px;
-    border-left: 4px solid var(--color-accent);
-    padding-left: 1.5rem;
-    background: var(--color-section-bg);
-    padding: 1rem 1.5rem;
-    border-radius: 0 8px 8px 0;
-}
+
 
 .hero-image-container {
     flex: 0 0 auto;
@@ -97,12 +88,7 @@
         margin-top: 4rem;
     }
 
-    .hero-tagline {
-        margin: 1.5rem auto 0;
-        border-left: none;
-        border-top: 4px solid var(--color-accent);
-        border-radius: 0 0 8px 8px;
-    }
+
 
     .image-wrapper {
         width: 350px;
