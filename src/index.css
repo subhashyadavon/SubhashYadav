@@ -1,12 +1,13 @@
 :root {
   --color-bg: #ffffff;
-  --color-text: #1a1a1a;
-  --color-accent: #002147; /* Oxford Blue */
-  --color-link: #002147;
-  --color-link-visited: #001226;
-  --color-border: #e1e1e1;
-  --color-section-bg: #f4f7f9; /* Subtle blue-ish tint */
-  --font-main: "Times New Roman", Times, serif;
+  --color-text: #272829;
+  --color-accent: #0563af; /* Electric Blue */
+  --color-link: #0563af;
+  --color-link-visited: #034c8a;
+  --color-border: #d2d3d5;
+  --color-section-bg: #f8f9fa;
+  --font-main: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --sidebar-width: 100px;
 }
 
 * {
@@ -20,34 +21,61 @@ body {
   color: var(--color-text);
   font-family: var(--font-main);
   line-height: 1.6;
-  padding: 2rem;
-  max-width: 900px;
-  margin: 0 auto;
+  padding: 0;
+  margin: 0;
+}
+
+#root {
+  display: flex;
+}
+
+main {
+  flex: 1;
+  margin-left: var(--sidebar-width);
+  padding: 2rem 5rem;
+  max-width: 1200px;
+}
+
+@media (max-width: 900px) {
+  main {
+    margin-left: 0;
+    padding: 2rem;
+  }
 }
 
 h1 {
-  font-size: 2rem;
-  margin-bottom: 0.25rem;
-  border-bottom: 2px solid var(--color-accent);
-  padding-bottom: 0.25rem;
-  color: var(--color-accent);
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #050d18;
 }
 
 h2 {
-  font-size: 1.3rem;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  border-bottom: 1.5px solid var(--color-accent);
-  text-transform: uppercase;
-  letter-spacing: 1.2px;
-  color: var(--color-accent);
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  color: #050d18;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+h2::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  height: 3px;
+  background: var(--color-accent);
 }
 
 h3 {
-  font-size: 1.15rem;
-  margin-top: 1rem;
-  margin-bottom: 0.5rem;
-  color: #333;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  color: #050d18;
 }
 
 p {
@@ -55,45 +83,24 @@ p {
 }
 
 ul {
-  margin-left: 2rem;
+  margin-left: 1.5rem;
   margin-bottom: 1rem;
 }
 
 a {
   color: var(--color-link);
-  text-decoration: underline;
-  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
 }
 
-a:visited {
-  color: var(--color-link-visited);
+a:hover {
+  text-decoration: none;
+  color: #0678d0;
 }
 
 section {
-  margin-bottom: 3rem;
-  padding: 1.5rem 0;
-}
-
-/* Structure utilities */
-.two-column {
-  display: flex;
-  gap: 2.5rem;
-  align-items: flex-start;
-}
-
-.two-column .left {
-  flex: 3;
-}
-
-.two-column .right {
-  flex: 1;
-}
-
-@media (max-width: 768px) {
-  .two-column {
-    flex-direction: column;
-    gap: 1.5rem;
-  }
+  padding: 60px 0;
+  scroll-margin-top: 60px;
 }
 
 /* Remove glassmorphism relics */

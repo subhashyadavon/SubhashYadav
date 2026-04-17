@@ -1,18 +1,49 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import './Hero.css'
 import profile_img from '../../assets/subhash.jpeg'
 
 const Hero = () => {
+    const titles = ["Software Engineer", "Researcher", "Problem Solver"];
+    const [titleIndex, setTitleIndex] = useState(0);
+    const [text, setText] = useState('');
+    const [isDeleting, setIsDeleting] = useState(false);
+    
+    useEffect(() => {
+        let timer;
+        const currentTitle = titles[titleIndex];
+        
+        if (isDeleting) {
+            timer = setTimeout(() => {
+                setText(currentTitle.substring(0, text.length - 1));
+                if (text === '') {
+                    setIsDeleting(false);
+                    setTitleIndex((prev) => (prev + 1) % titles.length);
+                }
+            }, 50); // Deleting speed
+        } else {
+            timer = setTimeout(() => {
+                setText(currentTitle.substring(0, text.length + 1));
+                if (text === currentTitle) {
+                    setTimeout(() => setIsDeleting(true), 2000); // Pause before deleting
+                }
+            }, 100); // Typing speed
+        }
+        
+        return () => clearTimeout(timer);
+    }, [text, isDeleting, titleIndex]);
+
     return (
         <section id='home' className='hero'>
-            <div className="two-column">
-                <div className="left">
-                    <h1>Subhash Yadav</h1>
-                    <p className="hero-subtitle">Software Engineer</p>
+            <div className="hero-content">
+                <div className="hero-text-container">
+                    <h1>Hi, I'm <span className="highlight">Subhash Yadav</span></h1>
+                    <h2 className="typing-text">I am a <span>{text}</span><span className="cursor">|</span></h2>
                     <p className="hero-tagline">Specializing in Full-Scale Systems, Distributed Computing, and AI/ML Solutions.</p>
                 </div>
-                <div className="right">
-                    <img src={profile_img} alt="Subhash Yadav" className="profile-img" />
+                <div className="hero-image-container">
+                    <div className="image-wrapper">
+                        <img src={profile_img} alt="Subhash Yadav" className="profile-img" />
+                    </div>
                 </div>
             </div>
         </section>

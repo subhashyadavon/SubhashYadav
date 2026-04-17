@@ -1,60 +1,46 @@
 .education {
-    margin: 3rem 0;
-}
-
-.education h2 {
-    font-size: 1.3rem;
-    font-weight: bold;
-    border-bottom: 2px solid var(--color-accent);
-    margin-bottom: 2rem;
-    text-transform: uppercase;
-    letter-spacing: 1.2px;
-    color: var(--color-accent);
+    margin: 4rem 0;
 }
 
 .education-item {
-    margin-bottom: 2rem;
-    padding-left: 1.5rem;
-    border-left: 2px solid var(--color-border);
-    position: relative;
+    margin-bottom: 2.5rem;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border: 1px solid #f1f3f5;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .education-item:hover {
-    border-left-color: var(--color-accent);
-}
-
-.education-item::before {
-    content: '';
-    position: absolute;
-    left: -7px;
-    top: 5px;
-    width: 12px;
-    height: 12px;
-    background: var(--color-accent);
-    border-radius: 50%;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(5, 99, 175, 0.1);
 }
 
 .education-item h3 {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-bottom: 0.25rem;
-    color: #1a1a1a;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #1a202c;
 }
 
 .education-item p {
-    margin-bottom: 0.5rem;
-    line-height: 1.5;
-    font-size: 0.95rem;
-    color: #333;
+    margin-bottom: 0.75rem;
+    line-height: 1.6;
+    font-size: 1rem;
+    color: #4a5568;
 }
 
 .education-item p em {
-    font-style: italic;
-    font-weight: bold;
+    font-style: normal;
+    font-weight: 600;
     color: var(--color-accent);
     background: #eef4f9;
-    padding: 2px 4px;
-    border-radius: 4px;
+    padding: 4px 10px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
 }
 
 .education-line, .education-dot, .education-title {

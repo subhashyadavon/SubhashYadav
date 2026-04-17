@@ -5,7 +5,7 @@ import mywork_data from '../../assets/mywork_data'
 const MyWork = () => {
     return (
         <section id='work' className='mywork'>
-            <h2>Selected Research & Projects</h2>
+            <h2>Selected Projects</h2>
             <div className="mywork-container">
                 {mywork_data.map((work, index) => (
                     <div key={index} className="project-item">

@@ -1,46 +1,83 @@
 .navbar {
-    display: flex;
-    justify-content: center;
-    padding: 1rem 0;
-    margin-bottom: 2rem;
-    border-bottom: 2px double var(--color-accent);
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: var(--sidebar-width);
+  background: #040b14;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+  z-index: 999;
+  transition: all 0.3s;
+}
+
+.nav-logo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.nav-logo a {
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid var(--color-accent);
+  padding: 5px 10px;
+  border-radius: 4px;
 }
 
 .nav-menu {
-    display: flex;
-    list-style: none;
-    gap: 1.25rem; /* Reduced from 2rem */
-    padding: 0;
-    flex-wrap: nowrap; /* Ensure single line */
-}
-
-.nav-menu li {
-    font-size: 0.9rem; /* Slightly reduced */
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    white-space: nowrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
 }
 
 .anchor-link {
-    text-decoration: none;
-    color: #444;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #a8a9b4;
+  transition: 0.3s;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
-.anchor-link:hover {
-    color: var(--color-accent);
+.anchor-link:hover, .anchor-link.active {
+  color: #fff;
 }
 
-.social-icon {
+.nav-text {
+  margin-top: 5px;
+}
+
+/* Simulate icons with CSS dots or initials if no icons available */
+.anchor-link::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background: currentColor;
+  border-radius: 50%;
+  margin-bottom: 4px;
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    width: 60px;
+  }
+  .nav-text {
     display: none;
+  }
 }
 
-.nav-mob-open, .nav-mob-close {
-    display: none !important;
-}
-
-@media (max-width: 768px) {
-    .nav-menu {
-        gap: 1rem;
-    }
+@media (max-width: 600px) {
+  .navbar {
+    left: -100px;
+  }
 }
