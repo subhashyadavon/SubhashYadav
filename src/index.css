@@ -106,3 +106,7 @@ section {
 .glass-card {
   display: contents;
 }
+
+.app-container.hidden {
+  display: none;
+}
