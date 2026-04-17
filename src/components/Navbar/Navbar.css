@@ -3,18 +3,24 @@
   left: 0;
   top: 0;
   bottom: 0;
-  width: var(--sidebar-width);
+  width: 80px;
   background: #040b14;
   display: flex;
   flex-direction: column;
   padding: 20px 0;
   z-index: 999;
-  transition: all 0.3s;
+  transition: width 0.3s ease;
+  overflow: hidden;
+}
+
+.navbar:hover {
+  width: 200px;
 }
 
 .nav-logo {
   text-align: center;
   margin-bottom: 30px;
+  width: 100%;
 }
 
 .nav-logo a {
@@ -33,34 +39,47 @@
   margin: 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   gap: 25px;
+  width: 100%;
 }
 
 .anchor-link {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   text-decoration: none;
   color: #a8a9b4;
-  transition: 0.3s;
-  font-size: 11px;
+  transition: color 0.3s;
+  font-size: 13px;
   text-transform: uppercase;
   letter-spacing: 1px;
+  width: 100%;
+  padding: 0 28px;
+  box-sizing: border-box;
 }
 
 .anchor-link:hover, .anchor-link.active {
-  color: #fff;
+  color: #2196f3; /* Bright blue for dark background */
 }
 
 .nav-text {
-  margin-top: 5px;
+  margin-left: 20px;
+  opacity: 0;
+  white-space: nowrap;
+  transition: opacity 0.3s ease;
 }
 
-/* SVG icons replaced dots */
+.navbar:hover .nav-text {
+  opacity: 1;
+}
+
+/* SVG icons */
 .anchor-link svg {
-  margin-bottom: 5px;
+  margin-bottom: 0;
   stroke: currentColor;
+  flex-shrink: 0;
+  width: 24px;
 }
 
 @media (max-width: 900px) {
