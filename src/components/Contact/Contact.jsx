@@ -3,11 +3,14 @@ import './Contact.css'
 
 const Contact = () => {
     const [isSubmitting, setIsSubmitting] = useState(false);
-    const [message, setMessage] = useState("");
+    const [errorMsg, setErrorMsg] = useState("");
+    const [showSuccess, setShowSuccess] = useState(false);
 
     const onSubmit = async (event) => {
         event.preventDefault();
         setIsSubmitting(true);
+        setErrorMsg("");
+        
         const formData = new FormData(event.target);
         formData.append("access_key", "80c64071-12a2-411d-b4f2-75ec97eaae4d");
 
@@ -22,13 +25,17 @@ const Contact = () => {
             });
             const res = await response.json();
             if (res.success) {
-                setMessage("Thank you. Your message has been sent.");
+                setShowSuccess(true);
                 event.target.reset();
+                // Auto-hide the popup after 3 seconds
+                setTimeout(() => {
+                    setShowSuccess(false);
+                }, 3000);
             } else {
-                setMessage("Error sending message. Please try again later.");
+                setErrorMsg("Error sending message. Please try again later.");
             }
         } catch (error) {
-            setMessage("Network error. Please try again.");
+            setErrorMsg("Network error. Please try again.");
         } finally {
             setIsSubmitting(false);
         }
@@ -36,6 +43,18 @@ const Contact = () => {
 
     return (
         <section id='contact' className='contact'>
+            {showSuccess && (
+                <div className="success-popup">
+                    <div className="popup-content">
+                        <div className="checkmark-circle">
+                            <div className="checkmark"></div>
+                        </div>
+                        <h3>Message Sent!</h3>
+                        <p>Thank you for reaching out, Subhash will get back to you soon.</p>
+                    </div>
+                </div>
+            )}
+
             <h2>Contact Information</h2>
             <div className="contact-details">
                 <p><strong>Email:</strong> subhashyadavon@gmail.com</p>
@@ -59,7 +78,7 @@ const Contact = () => {
                 <button type='submit' disabled={isSubmitting}>
                     {isSubmitting ? 'Sending...' : 'Send Message'}
                 </button>
-                {message && <p className="form-feedback">{message}</p>}
+                {errorMsg && <p className="form-feedback error">{errorMsg}</p>}
             </form>
         </section>
     )
