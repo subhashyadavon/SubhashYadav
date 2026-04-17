@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-start; /* Align content to the left */
-    padding-left: 180px; /* Indent even more as requested */
+    padding-left: 240px; /* Indent even more as requested */
     width: 100vw; /* Span full viewport width */
     margin-left: 0;
     
