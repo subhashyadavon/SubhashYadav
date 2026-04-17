@@ -31,10 +31,8 @@ body {
 
 main {
   margin-left: var(--sidebar-width);
-  padding: 2rem 5rem;
-  max-width: 1200px;
-  /* Add auto margins to center content if it hits the max-width */
-  margin-right: auto;
+  padding: 3rem 8%;
+  max-width: 100%;
 }
 
 @media (max-width: 900px) {
