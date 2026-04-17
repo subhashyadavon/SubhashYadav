@@ -5,5 +5,5 @@
       <stop offset="100%" style="stop-color:#034c8a;stop-opacity:1" />
     </linearGradient>
   </defs>
-  <text x="50%" y="54%" dominant-baseline="middle" text-anchor="middle" fill="url(#grad1)" font-family="'Outfit', 'Inter', sans-serif" font-weight="900" font-size="48">S</text>
+  <text x="50%" y="56%" dominant-baseline="middle" text-anchor="middle" fill="url(#grad1)" font-family="'Outfit', 'Inter', sans-serif" font-weight="900" font-size="56">S</text>
 </svg>
