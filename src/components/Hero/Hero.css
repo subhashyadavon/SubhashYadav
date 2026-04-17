@@ -52,6 +52,7 @@
 }
 
 .typing-text {
+    font-family: var(--font-headings);
     font-size: 2.2rem;
     color: #000000; /* Totally black */
     margin-top: 0;
