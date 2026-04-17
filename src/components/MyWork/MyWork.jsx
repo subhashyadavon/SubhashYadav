@@ -29,6 +29,11 @@ const MyWork = () => {
                                         [Documentation / Medium]
                                     </a></>
                                 )}
+                                {work.w_apk && (
+                                    <> | <a href={work.w_apk} target="_blank" rel="noopener noreferrer">
+                                        [Download APK]
+                                    </a></>
+                                )}
                             </p>
                         </div>
                     </div>

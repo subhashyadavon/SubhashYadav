@@ -24,13 +24,13 @@
 }
 
 .profile-img {
-    width: 160px;
-    height: 160px;
+    width: 250px; /* Increased from 160px */
+    height: 250px; /* Increased from 160px */
     object-fit: cover;
     border: 2px solid var(--color-accent);
     padding: 5px;
     background: #fff;
-    box-shadow: 8px 8px 0px var(--color-accent);
+    box-shadow: 10px 10px 0px var(--color-accent);
 }
 
 .hero h1 span, .hero-action, .hero-intro, .loading-bar, .scroll-chevrons, .availability-badge {
@@ -39,8 +39,8 @@
 
 @media (max-width: 768px) {
     .profile-img {
-        width: 140px;
-        height: 140px;
-        box-shadow: 6px 6px 0px var(--color-accent);
+        width: 180px;
+        height: 180px;
+        box-shadow: 7px 7px 0px var(--color-accent);
     }
 }
