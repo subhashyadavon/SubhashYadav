@@ -36,7 +36,7 @@ const Experience = () => {
                 <h3>Other Experience</h3>
                 <div className="experience-item">
                     <h4>Open-Source Contributor</h4>
-                    <p><em>Apache Kafka, Apache Airflow, LangChain | September 2025 - Present</em></p>
+                    <p><em>Various Projects | September 2025 - Present</em></p>
                     <ul>
                         <li>Contributed to identifying and fixing bugs, and improving documentation in major open-source projects.</li>
                     </ul>
