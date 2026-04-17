@@ -26,20 +26,21 @@ body {
 }
 
 #root {
-  display: flex;
+  /* Removed display: flex as it's unneeded for a fixed sidebar layout */
 }
 
 main {
-  flex: 1;
   margin-left: var(--sidebar-width);
   padding: 2rem 5rem;
   max-width: 1200px;
+  /* Add auto margins to center content if it hits the max-width */
+  margin-right: auto;
 }
 
 @media (max-width: 900px) {
   main {
-    margin-left: 0;
-    padding: 2rem;
+    margin-left: 60px;
+    padding: 1.5rem;
   }
 }
 

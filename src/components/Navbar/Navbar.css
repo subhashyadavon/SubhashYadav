@@ -74,10 +74,14 @@
   .nav-text {
     display: none;
   }
+  .nav-logo a {
+    font-size: 14px;
+    padding: 3px 5px;
+  }
 }
 
 @media (max-width: 600px) {
   .navbar {
-    left: -100px;
+    left: 0;
   }
 }
