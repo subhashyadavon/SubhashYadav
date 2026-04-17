@@ -6,41 +6,64 @@
     font-size: 1.5rem;
     font-weight: bold;
     border-bottom: 2px solid #000;
-    margin-bottom: 1rem;
-}
-
-.experience-category {
     margin-bottom: 2rem;
-}
-
-.experience-category h3 {
-    font-size: 1.25rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .experience-item {
-    margin-bottom: 1.5rem;
-    padding-left: 1rem;
+    margin-bottom: 2.5rem;
+    padding-left: 1.5rem;
+    border-left: 1px solid #ccc;
+    position: relative;
+}
+
+.experience-item::before {
+    content: '';
+    position: absolute;
+    left: -4px;
+    top: 5px;
+    width: 7px;
+    height: 7px;
+    background: #000;
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.5rem;
+}
+
+.experience-item h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.experience-date {
+    font-size: 0.9rem;
+    font-style: italic;
+    color: #555;
 }
 
 .experience-item h4 {
     font-size: 1.1rem;
-    margin: 0;
+    font-weight: normal;
+    margin: 0.25rem 0;
+    color: #333;
 }
 
 .experience-item p {
-    margin: 0.25rem 0 0.5rem 0;
-    font-size: 0.9rem;
+    margin: 0.5rem 0;
+    font-size: 0.95rem;
 }
 
 .experience-item ul {
     margin: 0.5rem 0 0 1.5rem;
+    font-size: 0.95rem;
 }
 
 .experience-tabs, .experience-line, .timeline-dot, .experience-logo {
     display: none !important;
-}
-
 }

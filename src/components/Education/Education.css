@@ -24,8 +24,8 @@
     line-height: 1.5;
 }
 
-.education-line, .education-dot, .education-title {
+.education-line,
+.education-dot,
+.education-title {
     display: none !important;
-}
-
 }
