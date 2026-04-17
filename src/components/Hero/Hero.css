@@ -2,8 +2,10 @@
     min-height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding-top: 0;
+    justify-content: flex-start; /* Align content to the left */
+    padding-left: 120px; /* Indent to clear the floating sidebar icons */
+    width: 100vw; /* Span full viewport width */
+    margin-left: 0;
     
     /* Pexels Background */
     background-image: url('../../assets/pexels-simona-522599730-31005544.jpg');
@@ -13,35 +15,36 @@
     
     /* Ensure text readability over light background */
     position: relative;
+    overflow: hidden;
 }
 
 .hero::before {
     content: "";
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(255, 255, 255, 0.9); /* Very light overlay so background is faintly visible */
+    background: rgba(255, 255, 255, 0.75); /* More visible background (reduced opacity overlay) */
     z-index: 0;
 }
 
 .hero-content {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 4rem;
+    justify-content: flex-start;
     width: 100%;
     z-index: 1; /* Sit above the overlay */
 }
 
 .hero-text-container {
     flex: 1;
-    text-align: center; /* Center the text since there's no image now */
+    text-align: left; /* Left align the text */
+    max-width: 800px;
 }
 
 .hero h1 {
     font-size: 4rem;
     color: var(--color-text);
     border: none;
-    margin-bottom: 0;
+    margin-bottom: 0.5rem;
 }
 
 .hero h1 .highlight {
@@ -52,7 +55,7 @@
     font-size: 2.2rem;
     color: #4a5568;
     margin-top: 0;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
     border: none;
     text-transform: none;
     letter-spacing: normal;
@@ -74,17 +77,36 @@
     50% { opacity: 0; }
 }
 
-/* Adjust SocialLinks spacing within Centered Hero */
+/* Adjust SocialLinks spacing within Left-Aligned Hero */
 .hero .social-links {
-    justify-content: center;
+    justify-content: flex-start;
     margin-top: 3rem;
+    margin-left: 5px;
 }
 
 @media (max-width: 1024px) {
-    .hero-content {
-        flex-direction: column;
+    .hero {
+        padding-left: 80px;
+    }
+    .hero h1 {
+        font-size: 3rem;
+    }
+    .typing-text {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
         text-align: center;
-        gap: 3rem;
-        margin-top: 4rem;
+        justify-content: center;
+    }
+    .hero-text-container {
+        text-align: center;
+    }
+    .hero .social-links {
+        justify-content: center;
     }
 }
