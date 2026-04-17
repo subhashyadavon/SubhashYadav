@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import './Hero.css'
-import profile_img from '../../assets/subhash.jpeg'
 import SocialLinks from '../SocialLinks/SocialLinks'
 
 const Hero = () => {
@@ -40,11 +39,6 @@ const Hero = () => {
                     <h1>Hi, I'm <span className="highlight">Subhash Yadav</span></h1>
                     <h2 className="typing-text">I am a <span>{text}</span><span className="cursor">|</span></h2>
                     <SocialLinks />
-                </div>
-                <div className="hero-image-container">
-                    <div className="image-wrapper">
-                        <img src={profile_img} alt="Subhash Yadav" className="profile-img" />
-                    </div>
                 </div>
             </div>
         </section>
