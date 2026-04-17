@@ -1,28 +1,28 @@
 .mywork {
-    margin: 4rem 0;
+    margin: 3rem 0;
 }
 
 .mywork h2 {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     font-weight: bold;
     border-bottom: 2px solid var(--color-accent);
-    margin-bottom: 3rem;
+    margin-bottom: 2.5rem;
     text-transform: uppercase;
-    letter-spacing: 1.5px;
+    letter-spacing: 1.2px;
     color: var(--color-accent);
 }
 
 .mywork-container {
     display: flex;
     flex-direction: column;
-    gap: 4rem;
+    gap: 3rem;
 }
 
 .project-item {
     display: grid;
-    grid-template-columns: 1fr 1.5fr;
-    gap: 2.5rem;
-    padding-bottom: 3rem;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    padding-bottom: 2rem;
     border-bottom: 1px solid var(--color-border);
     align-items: flex-start;
 }
@@ -35,7 +35,7 @@
     width: 100%;
     border: 1px solid #ddd;
     background: #fff;
-    padding: 5px;
+    padding: 3px;
 }
 
 .project-image img {
@@ -46,43 +46,42 @@
 }
 
 .project-content h3 {
-    font-size: 1.4rem;
+    font-size: 1.25rem;
     font-weight: bold;
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
     color: var(--color-accent);
 }
 
 .project-content p {
-    font-size: 1rem;
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
     color: #333;
 }
 
 .project-links {
     font-family: var(--font-main);
     font-weight: bold;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     color: var(--color-accent);
 }
 
 .project-links a {
     color: var(--color-accent);
     text-decoration: none;
-    border-bottom: 1px solid transparent;
 }
 
 .project-links a:hover {
-    border-bottom-color: var(--color-accent);
+    text-decoration: underline;
 }
 
 @media (max-width: 768px) {
     .project-item {
         grid-template-columns: 1fr;
-        gap: 1.5rem;
+        gap: 1rem;
     }
 
     .project-image {
-        max-width: 400px;
+        max-width: 300px;
     }
 }

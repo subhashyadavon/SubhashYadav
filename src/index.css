@@ -1,11 +1,11 @@
 :root {
   --color-bg: #ffffff;
   --color-text: #1a1a1a;
-  --color-accent: #a50021; /* Stanford Crimson */
-  --color-link: #a50021;
-  --color-link-visited: #750017;
+  --color-accent: #002147; /* Oxford Blue */
+  --color-link: #002147;
+  --color-link-visited: #001226;
   --color-border: #e1e1e1;
-  --color-section-bg: #f9f9f7; /* Subtle warm tint */
+  --color-section-bg: #f4f7f9; /* Subtle blue-ish tint */
   --font-main: "Times New Roman", Times, serif;
 }
 
@@ -20,43 +20,43 @@ body {
   color: var(--color-text);
   font-family: var(--font-main);
   line-height: 1.6;
-  padding: 3rem 2rem;
+  padding: 2rem;
   max-width: 900px;
   margin: 0 auto;
 }
 
 h1 {
-  font-size: 2.8rem;
-  margin-bottom: 0.5rem;
-  border-bottom: 3px solid var(--color-accent);
-  padding-bottom: 0.5rem;
+  font-size: 2rem;
+  margin-bottom: 0.25rem;
+  border-bottom: 2px solid var(--color-accent);
+  padding-bottom: 0.25rem;
   color: var(--color-accent);
 }
 
 h2 {
-  font-size: 1.6rem;
-  margin-top: 2.5rem;
-  margin-bottom: 1.25rem;
+  font-size: 1.3rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
   border-bottom: 1.5px solid var(--color-accent);
   text-transform: uppercase;
-  letter-spacing: 1.5px;
+  letter-spacing: 1.2px;
   color: var(--color-accent);
 }
 
 h3 {
-  font-size: 1.3rem;
-  margin-top: 1.25rem;
-  margin-bottom: 0.75rem;
+  font-size: 1.15rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
   color: #333;
 }
 
 p {
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
 }
 
 ul {
   margin-left: 2rem;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
 }
 
 a {
@@ -70,14 +70,14 @@ a:visited {
 }
 
 section {
-  margin-bottom: 4rem;
-  padding: 2rem 0;
+  margin-bottom: 3rem;
+  padding: 1.5rem 0;
 }
 
 /* Structure utilities */
 .two-column {
   display: flex;
-  gap: 3rem;
+  gap: 2.5rem;
   align-items: flex-start;
 }
 
@@ -92,7 +92,7 @@ section {
 @media (max-width: 768px) {
   .two-column {
     flex-direction: column;
-    gap: 2rem;
+    gap: 1.5rem;
   }
 }
 

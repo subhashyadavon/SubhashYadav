@@ -1,5 +1,5 @@
 .hero {
-    margin: 4rem 0 6rem 0;
+    margin: 2rem 0 4rem 0;
 }
 
 .hero h1 {
@@ -7,30 +7,30 @@
 }
 
 .hero-subtitle {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: bold;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     color: #1a1a1a;
 }
 
 .hero-tagline {
-    font-size: 1.15rem;
+    font-size: 1rem;
     font-style: italic;
     color: #444;
-    max-width: 650px;
-    margin-top: 0.75rem;
+    max-width: 600px;
+    margin-top: 0.5rem;
     border-left: 3px solid var(--color-accent);
-    padding-left: 1.5rem;
+    padding-left: 1.25rem;
 }
 
 .profile-img {
-    width: 220px;
-    height: 220px;
+    width: 160px;
+    height: 160px;
     object-fit: cover;
     border: 2px solid var(--color-accent);
-    padding: 6px;
+    padding: 5px;
     background: #fff;
-    box-shadow: 10px 10px 0px var(--color-accent);
+    box-shadow: 8px 8px 0px var(--color-accent);
 }
 
 .hero h1 span, .hero-action, .hero-intro, .loading-bar, .scroll-chevrons, .availability-badge {
@@ -39,8 +39,8 @@
 
 @media (max-width: 768px) {
     .profile-img {
-        width: 180px;
-        height: 180px;
-        box-shadow: 7px 7px 0px var(--color-accent);
+        width: 140px;
+        height: 140px;
+        box-shadow: 6px 6px 0px var(--color-accent);
     }
 }

@@ -1,41 +1,43 @@
 .techstack {
-    margin: 4rem 0;
+    margin: 3rem 0;
 }
 
 .techstack h2 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: bold;
-    border-bottom: 2px solid #000;
+    border-bottom: 2px solid var(--color-accent);
     margin-bottom: 2rem;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 1.2px;
+    color: var(--color-accent);
 }
 
 .skills-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1.5rem;
 }
 
 .skill-category {
-    padding: 1rem;
+    padding: 0.75rem 1rem;
     border: 1px solid #eee;
-    background: #fafafa;
+    background: #fdfdfd;
 }
 
 .skill-category h3 {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: bold;
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.5rem;
     color: #333;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 0.25rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.2rem;
 }
 
 .skill-category p {
-    font-size: 0.95rem;
-    line-height: 1.6;
+    font-size: 0.85rem;
+    line-height: 1.4;
     color: #555;
+    margin-bottom: 0;
 }
 
 .skill-badges, .techstack-title {
