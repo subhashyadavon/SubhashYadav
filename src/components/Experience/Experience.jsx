@@ -23,11 +23,11 @@ const Experience = () => {
                     <h4>Applied AI Systems Engineer</h4>
                     <p><em>BIL Security Service Ltd. | January 2026 - April 2026</em></p>
                     <ul>
-                        <li>Boosted real-time detection accuracy by 112% (from 34% baseline to 72.1% mAP) by performing site-specific fine-tuning.</li>
-                        <li>Reduced hardware infrastructure costs by 100% by optimizing YOLOv8 models with Intel OpenVINO.</li>
-                        <li>Architected a scalable edge-to-cloud security pipeline capable of monitoring 10 simultaneous camera feeds.</li>
-                        <li>Designed and implemented an automated benchmarking suite for model performance evaluation.</li>
-                        <li>Engineered a resilient event-driven communication layer using HTTP protocols.</li>
+                        <li><strong>Selective Persistence Pipeline:</strong> Implemented a 10-second rolling ring-buffer architecture that selectively extracts and analyzes critical video segments from live RTSP streams before central server ingestion.</li>
+                        <li><strong>Performance Benchmarking:</strong> Validated system efficiency across multiple models on Intel i7 hardware, achieving a peak real-time rate of ~21 FPS with a minimal detection latency of ~49ms using YOLOv8 architectures.</li>
+                        <li><strong>High-Accuracy Selection:</strong> Justified the adoption of YOLOv8-Small, which delivered a 5.5X gain in detection density and a +446% accuracy breakthrough compared to legacy Nano-scale models.</li>
+                        <li><strong>Heuristic Intelligence Funnel:</strong> Developed a multi-stage verification funnel utilizing silhouette aspect-ratio checks (&lt; 0.85), center-frame positioning bias, and threat-priority policies to eliminate environmental false positives.</li>
+                        <li><strong>Zero-Downtime Hot Swaps:</strong> Engineered a modular model registry that allows for "Live Swaps" of object detection models in system memory without interrupting the active RTSP video stream.</li>
                     </ul>
                 </div>
             </div>
