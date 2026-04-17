@@ -22,7 +22,7 @@
     content: "";
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(255, 255, 255, 0.75); /* More visible background (reduced opacity overlay) */
+    background: rgba(255, 255, 255, 0.6); /* Even more visible background */
     z-index: 0;
 }
 
