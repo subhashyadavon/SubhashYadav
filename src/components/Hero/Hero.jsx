@@ -8,7 +8,7 @@ const Hero = () => {
             <div className="two-column">
                 <div className="left">
                     <h1>Subhash Yadav</h1>
-                    <p className="hero-subtitle">Software Engineer & Researcher</p>
+                    <p className="hero-subtitle">Software Engineer</p>
                     <p className="hero-tagline">Specializing in Full-Scale Systems, Distributed Computing, and AI/ML Solutions.</p>
                 </div>
                 <div className="right">
