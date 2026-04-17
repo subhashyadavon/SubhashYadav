@@ -3,7 +3,7 @@ import './Hero.css'
 import profile_img from '../../assets/subhash.jpeg'
 
 const Hero = () => {
-    const titles = ["Software Engineer", "Researcher", "Problem Solver"];
+    const titles = ["Software Engineer", "Problem Solver", "Deep Thinker", "Continuous Learner"];
     const [titleIndex, setTitleIndex] = useState(0);
     const [text, setText] = useState('');
     const [isDeleting, setIsDeleting] = useState(false);
