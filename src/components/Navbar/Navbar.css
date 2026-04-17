@@ -9,15 +9,17 @@
 .nav-menu {
     display: flex;
     list-style: none;
-    gap: 2rem;
+    gap: 1.25rem; /* Reduced from 2rem */
     padding: 0;
+    flex-wrap: nowrap; /* Ensure single line */
 }
 
 .nav-menu li {
-    font-size: 0.95rem;
+    font-size: 0.9rem; /* Slightly reduced */
     font-weight: bold;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
 }
 
 .anchor-link {
@@ -37,10 +39,8 @@
     display: none !important;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .nav-menu {
-        flex-direction: column;
-        align-items: center;
-        gap: 0.5rem;
+        gap: 1rem;
     }
 }
