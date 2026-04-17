@@ -68,6 +68,9 @@
 
 .hero-image-container {
     flex: 0 0 auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .image-wrapper {
