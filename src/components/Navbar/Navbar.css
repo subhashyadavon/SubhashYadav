@@ -47,7 +47,6 @@
   font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 1px;
-  position: relative;
 }
 
 .anchor-link:hover, .anchor-link.active {
@@ -55,31 +54,12 @@
 }
 
 .nav-text {
-  position: absolute;
-  left: 100%;
-  top: 50%;
-  transform: translateY(-50%);
-  background: var(--color-accent);
-  color: #fff;
-  padding: 6px 12px;
-  border-radius: 4px;
-  margin-left: 15px;
-  opacity: 0;
-  pointer-events: none;
-  white-space: nowrap;
-  font-size: 12px;
-  font-weight: 600;
-  transition: opacity 0.3s;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.anchor-link:hover .nav-text {
-  opacity: 1;
+  margin-top: 5px;
 }
 
 /* SVG icons replaced dots */
 .anchor-link svg {
-  margin-bottom: 0px;
+  margin-bottom: 5px;
   stroke: currentColor;
 }
 
