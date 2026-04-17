@@ -1,36 +1,12 @@
 .navbar {
   position: fixed;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  width: 80px;
-  background: #040b14;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
   display: flex;
   flex-direction: column;
-  padding: 20px 0;
   z-index: 999;
-  transition: width 0.3s ease;
-  overflow: hidden;
-}
-
-.navbar:hover {
-  width: 200px;
-}
-
-.nav-logo {
-  text-align: center;
-  margin-bottom: 30px;
-  width: 100%;
-}
-
-.nav-logo a {
-  font-size: 24px;
-  font-weight: 700;
-  color: #fff;
-  text-decoration: none;
-  border: 2px solid var(--color-accent);
-  padding: 5px 10px;
-  border-radius: 4px;
 }
 
 .nav-menu {
@@ -40,8 +16,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 25px;
-  width: 100%;
+  gap: 15px;
 }
 
 .anchor-link {
@@ -49,34 +24,47 @@
   flex-direction: row;
   align-items: center;
   text-decoration: none;
-  color: #a8a9b4;
-  transition: color 0.3s;
+  color: var(--color-accent); /* Icon color blue */
+  background: #ffffff;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   font-size: 13px;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
-  width: 100%;
-  padding: 0 28px;
-  box-sizing: border-box;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px; /* Circle */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 
-.anchor-link:hover, .anchor-link.active {
-  color: #2196f3; /* Bright blue for dark background */
+.anchor-link:hover {
+  width: 150px; /* Expand to pill */
+  background: var(--color-accent);
+  color: #fff;
+  box-shadow: 0 6px 15px rgba(5, 99, 175, 0.3);
+}
+
+.anchor-link.active {
+  background: var(--color-accent);
+  color: #ffffff;
+  box-shadow: 0 6px 15px rgba(5, 99, 175, 0.3);
 }
 
 .nav-text {
-  margin-left: 20px;
+  margin-left: 15px;
   opacity: 0;
   white-space: nowrap;
   transition: opacity 0.3s ease;
 }
 
-.navbar:hover .nav-text {
+.anchor-link:hover .nav-text {
   opacity: 1;
 }
 
 /* SVG icons */
 .anchor-link svg {
-  margin-bottom: 0;
+  margin-left: 13px;
   stroke: currentColor;
   flex-shrink: 0;
   width: 24px;
@@ -84,19 +72,26 @@
 
 @media (max-width: 900px) {
   .navbar {
-    width: 60px;
-  }
-  .nav-text {
-    display: none;
-  }
-  .nav-logo a {
-    font-size: 14px;
-    padding: 3px 5px;
+    left: 10px;
   }
 }
 
 @media (max-width: 600px) {
   .navbar {
-    left: 0;
+    bottom: 20px;
+    top: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-direction: row;
+  }
+  .nav-menu {
+    flex-direction: row;
+    gap: 10px;
+  }
+  .anchor-link:hover {
+    width: 50px; /* Disable pill expand on mobile to save space */
+  }
+  .anchor-link:hover .nav-text {
+    opacity: 0;
   }
 }

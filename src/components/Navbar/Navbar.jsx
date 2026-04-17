@@ -28,9 +28,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <div className="nav-logo">
-        <AnchorLink href='#home'>SY</AnchorLink>
-      </div>
+
       <ul className="nav-menu">
         <li><AnchorLink className={`anchor-link ${activeSection === 'home' ? 'active' : ''}`} offset={100} href='#home'><HomeIcon /><span className="nav-text">Home</span></AnchorLink></li>
         <li><AnchorLink className={`anchor-link ${activeSection === 'about' ? 'active' : ''}`} offset={100} href='#about'><UserIcon /><span className="nav-text">About</span></AnchorLink></li>
