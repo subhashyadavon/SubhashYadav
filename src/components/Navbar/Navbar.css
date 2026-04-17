@@ -57,14 +57,10 @@
   margin-top: 5px;
 }
 
-/* Simulate icons with CSS dots or initials if no icons available */
-.anchor-link::before {
-  content: '';
-  width: 8px;
-  height: 8px;
-  background: currentColor;
-  border-radius: 50%;
-  margin-bottom: 4px;
+/* SVG icons replaced dots */
+.anchor-link svg {
+  margin-bottom: 5px;
+  stroke: currentColor;
 }
 
 @media (max-width: 900px) {
