@@ -1,11 +1,9 @@
 :root {
-  --color-bg: #0a0a0a;
-  --color-primary: #00f3ff;
-  --color-secondary: #bc13fe;
-  --color-text: #ffffff;
-  --glass-bg: rgba(15, 15, 15, 0.75);
-  --glass-border: rgba(255, 255, 255, 0.1);
-  --font-main: 'Outfit', sans-serif;
+  --color-bg: #ffffff;
+  --color-text: #000000;
+  --color-link: #0000ee;
+  --color-link-visited: #551a8b;
+  --font-main: "Times New Roman", Times, serif;
 }
 
 * {
@@ -18,161 +16,65 @@ body {
   background: var(--color-bg);
   color: var(--color-text);
   font-family: var(--font-main);
-  overflow-x: hidden;
+  line-height: 1.5;
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid #000;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+ul {
+  margin-left: 2rem;
+  margin-bottom: 1rem;
 }
 
 a {
-  text-decoration: none;
-  color: inherit;
+  color: var(--color-link);
+  text-decoration: underline;
 }
 
-/* Scrollbar */
+a:visited {
+  color: var(--color-link-visited);
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+/* Hide scrollbar customization */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: initial;
 }
 
 ::-webkit-scrollbar-track {
-  background: #1a1a1a;
+  background: initial;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, var(--color-primary), var(--color-secondary));
-  border-radius: 5px;
+  background: initial;
 }
 
-/* Global Glass Card Style */
+/* Remove glassmorphism */
 .glass-card {
-  background: var(--glass-bg);
-  border: 1px solid var(--glass-border);
-  backdrop-filter: blur(15px);
-  -webkit-backdrop-filter: blur(15px);
-  border-radius: 20px;
-  padding: 40px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
-  transition: all 0.4s ease;
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-}
-
-.glass-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.05), transparent);
-  transition: 0.5s;
-}
-
-.glass-card:hover::before {
-  left: 100%;
-}
-
-.glass-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 25px rgba(0, 243, 255, 0.15);
-  border-color: rgba(0, 243, 255, 0.4);
-}
-
-/* Global Dialog Styles */
-.dialog-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.8);
-  backdrop-filter: blur(5px);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 2000;
-  animation: fadeIn 0.3s ease;
-}
-
-.dialog-box {
-  background: rgba(20, 20, 20, 0.9);
-  border: 1px solid var(--color-primary);
-  padding: 40px;
-  border-radius: 20px;
-  text-align: center;
-  box-shadow: 0 0 30px rgba(0, 243, 255, 0.3);
-  max-width: 400px;
-  width: 90%;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  animation: scaleUp 0.3s ease;
-}
-
-.dialog-box h3 {
-  font-size: 32px;
-  color: var(--color-primary);
-  margin: 0;
-  font-weight: 700;
-}
-
-.dialog-box p {
-  font-size: 18px;
-  color: #e0e0e0;
-  line-height: 1.5;
-  margin: 0;
-}
-
-.dialog-box input {
-  padding: 15px;
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  background: rgba(255, 255, 255, 0.05);
-  color: white;
-  font-size: 16px;
-  width: 100%;
-}
-
-.dialog-box input:focus {
-  outline: none;
-  border-color: var(--color-primary);
-  box-shadow: 0 0 10px rgba(0, 243, 255, 0.2);
-}
-
-.dialog-box button {
-  background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+  background: none;
   border: none;
-  color: white;
-  padding: 12px 30px;
-  border-radius: 30px;
-  font-size: 18px;
-  cursor: pointer;
-  align-self: center;
-  transition: transform 0.2s;
-  font-weight: 600;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  border-radius: 0;
+  padding: 0;
+  box-shadow: none;
+  transition: none;
 }
 
-.dialog-box button:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 15px rgba(188, 19, 254, 0.5);
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes scaleUp {
-  from {
-    transform: scale(0.8);
-    opacity: 0;
-  }
-
-  to {
-    transform: scale(1);
-    opacity: 1;
-  }
+.glass-card::before, .glass-card:hover::before, .glass-card:hover {
+  display: none;
 }

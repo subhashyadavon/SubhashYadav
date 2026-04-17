@@ -1,159 +1,21 @@
 .about {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 60px;
-    margin: 200px 10% 80px 10%;
-    /* Increased top margin for separation */
-    position: relative;
-    z-index: 1;
+    margin: 4rem 0;
 }
 
-.about-title h1 {
-    font-size: 80px;
-    font-weight: 700;
-    background: linear-gradient(270deg, var(--color-primary), var(--color-secondary));
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 0 0 30px rgba(0, 243, 255, 0.3);
+.about h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-bottom: 2px solid #000;
+    margin-bottom: 1rem;
 }
 
-.about-sections {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    width: 100%;
+.about p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
 }
 
-.about-left-column {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-}
-
-/* Glassmorphism Card Style */
-.about-card {
-    background: var(--glass-bg);
-    border: 1px solid var(--glass-border);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 20px;
-    padding: 40px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.about-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 0 20px rgba(0, 243, 255, 0.2);
-    border-color: rgba(0, 243, 255, 0.3);
-}
-
-.about-card h3 {
-    font-size: 32px;
-    margin-bottom: 20px;
-    color: var(--color-primary);
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-.about-intro p {
-    font-size: 18px;
-    line-height: 1.6;
-    color: #ccc;
-}
-
-/* Achievements Section */
-.about-achievements {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-}
-
-.achievement-item h1 {
-    font-size: 48px;
-    font-weight: 700;
-    color: white;
-    margin-bottom: 5px;
-    text-shadow: 0 0 10px var(--color-secondary);
-}
-
-.achievement-item p {
-    font-size: 14px;
-    color: var(--color-primary);
-    letter-spacing: 1px;
-}
-
-
-
-
-/* Resume Button */
-.resume-container {
-    margin-top: 30px;
-    display: flex;
-    justify-content: flex-start;
-}
-
-.resume-btn {
-    text-decoration: none;
-    padding: 15px 40px;
-    border-radius: 50px;
-    background: linear-gradient(45deg, var(--color-primary), var(--color-secondary));
-    color: var(--color-bg);
-    font-size: 18px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-    transition: all 0.3s ease;
-    box-shadow: 0 0 20px rgba(0, 243, 255, 0.4);
-    display: inline-block;
-    cursor: pointer;
-}
-
-.resume-btn::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(45deg, var(--color-secondary), var(--color-primary));
-    z-index: -1;
-    transition: opacity 0.3s ease;
-    opacity: 0;
-}
-
-.resume-btn:hover::before {
-    opacity: 1;
-}
-
-.resume-btn:hover {
-    transform: translateY(-5px) scale(1.05);
-    box-shadow: 0 0 30px rgba(188, 19, 254, 0.6);
-    color: white;
-}
-
-.resume-btn:active {
-    transform: translateY(-2px);
-}
-
-/* Responsive */
-@media (max-width: 1024px) {
-    .about-sections {
-        grid-template-columns: 1fr;
-    }
-
-    .about {
-        margin: 50px 5%;
-    }
-
-    .about-title h1 {
-        font-size: 50px;
-    }
+.about a {
+    font-family: var(--font-main);
+    font-weight: bold;
 }

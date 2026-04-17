@@ -1,253 +1,33 @@
 .hero {
     display: flex;
-    align-items: center;
     flex-direction: column;
-    gap: 30px;
-    margin: 50px 170px 150px 170px;
-    /* Increased bottom margin for gap */
-    padding-top: 150px;
+    align-items: flex-start;
+    gap: 1rem;
+    margin: 4rem 0;
+    padding: 0;
 }
 
 .hero h1 {
-    text-align: center;
-    width: 100%;
-    /* Changed from 70% to 100% */
-    font-size: 90px;
-    font-weight: 600;
-    white-space: nowrap;
-    /* Force one line */
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+    line-height: 1.2;
 }
 
 .hero h1 span {
-    background: linear-gradient(270deg, var(--color-primary) 10%, var(--color-secondary) 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.hero p {
-    width: 50%;
-    text-align: center;
-    font-size: 24px;
-    line-height: 40px;
+    color: #000;
 }
 
 .hero-action {
-    display: flex;
-    align-items: center;
-    gap: 25px;
-    font-size: 50px;
-    font-weight: 500;
-    margin-bottom: 50px;
+    display: none;
 }
 
-.hero-connect {
-    padding: 25px 45px;
-    border-radius: 50px;
-    background: linear-gradient(270deg, var(--color-primary) 10%, var(--color-secondary) 100%);
-    color: var(--color-bg);
-    font-weight: 600;
-    cursor: pointer;
-
+.hero-intro, .loading-bar, .scroll-chevrons, .availability-badge {
+    display: none !important;
 }
 
-.hero-resume {
-    padding: 25px 45px;
-    border-radius: 50px;
-    border: 2px solid #ffff;
-    cursor: pointer;
-
-}
-
-.hero-resume a {
-    text-decoration: none;
-    color: white;
-}
-
-.hero-connect:hover {
-    border: 2px solid var(--color-primary);
-}
-
-.hero-resume:hover {
-    border: 2px solid var(--color-primary);
-}
-
-/* Scroll Chevrons Animation */
-.scroll-chevrons {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 50px;
-}
-
-.scroll-chevrons span {
-    width: 30px;
-    height: 30px;
-    border-bottom: 5px solid var(--color-primary);
-    border-right: 5px solid var(--color-primary);
-    transform: rotate(45deg);
-    margin: -10px;
-    animation: scrollFade 2s infinite;
-    opacity: 0;
-    filter: drop-shadow(0 0 5px var(--color-primary));
-}
-
-.scroll-chevrons span:nth-child(2) {
-    animation-delay: -0.2s;
-    border-color: var(--color-secondary);
-    filter: drop-shadow(0 0 5px var(--color-secondary));
-}
-
-.scroll-chevrons span:nth-child(3) {
-    animation-delay: -0.4s;
-}
-
-@keyframes scrollFade {
-    0% {
-        opacity: 0;
-        transform: rotate(45deg) translate(-20px, -20px);
-    }
-
-    50% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-        transform: rotate(45deg) translate(20px, 20px);
-    }
-}
-
-/* Intro Animation CSS */
-.hero-intro {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 80vh;
-    /* Adjust as appropriate to fill the hero area */
-    gap: 20px;
-}
-
-.intro-text {
-    font-size: 40px;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
-    color: var(--color-primary);
-    text-shadow: 0 0 10px var(--color-primary);
-    animation: blink 1s infinite;
-}
-
-@keyframes blink {
-    50% {
-        opacity: 0;
-    }
-}
-
-.loading-bar {
-    width: 300px;
-    height: 4px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 2px;
-    overflow: hidden;
-    position: relative;
-}
-
-.loading-progress {
-    width: 0%;
-    height: 100%;
-    background: var(--color-secondary);
-    box-shadow: 0 0 10px var(--color-secondary);
-    animation: loadProgress 3.5s ease-in-out forwards;
-}
-
-@keyframes loadProgress {
-    0% {
-        width: 0%;
-    }
-
-    100% {
-        width: 100%;
-    }
-}
-
-.fade-in {
-    animation: fadeIn 1s ease-in forwards;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Responsive Styles */
-@media (max-width: 1200px) {
-    .hero {
-        margin: 50px 100px 100px 100px;
-        padding-top: 120px;
-    }
-
+@media (max-width: 600px) {
     .hero h1 {
-        font-size: 70px;
-    }
-}
-
-@media(max-width:768px) {
-    .hero {
-        margin: 30px 50px 80px 50px;
-        padding-top: 100px;
-        gap: 20px;
-    }
-
-    .hero h1 {
-        font-size: 50px;
-        width: 90%;
-    }
-
-    .hero h1 span {
-        white-space: normal;
-    }
-
-    .scroll-chevrons {
-        bottom: 30px;
-    }
-
-    .hero-intro .intro-text {
-        font-size: 22px;
-    }
-
-    .loading-bar {
-        width: 250px;
-    }
-}
-
-@media (max-width: 480px) {
-    .hero {
-        margin: 20px 20px 60px 20px;
-        padding-top: 80px;
-    }
-
-    .hero h1 {
-        font-size: 36px;
-    }
-
-    .hero-intro .intro-text {
-        font-size: 18px;
-    }
-
-    .loading-bar {
-        width: 200px;
-    }
-
-    .scroll-chevrons span {
-        width: 25px;
-        height: 25px;
+        font-size: 2rem;
     }
 }
