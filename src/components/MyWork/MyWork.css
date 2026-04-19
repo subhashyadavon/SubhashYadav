@@ -4,48 +4,46 @@
 
 .mywork-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 3rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
 }
 
 .project-item {
     background: #fff;
-    border-radius: 20px;
+    border-radius: 16px;
     overflow: hidden;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     border: 1px solid #f1f3f5;
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
-    height: 100%;
 }
 
 .project-item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(5, 99, 175, 0.12);
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(5, 99, 175, 0.1);
 }
 
 .project-image {
     width: 100%;
-    height: 350px; /* Much bigger image as requested */
+    height: 220px;
     background: #f8f9fa;
     overflow: hidden;
-    border-bottom: 1px solid #f1f3f5;
 }
 
 .project-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.6s ease;
+    transition: transform 0.3s ease;
 }
 
 .project-item:hover .project-image img {
-    transform: scale(1.08);
+    transform: scale(1.05);
 }
 
 .project-content {
-    padding: 2.5rem; /* More breathing room */
+    padding: 1.5rem;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -53,51 +51,48 @@
 
 .project-content h3 {
     font-family: var(--font-headings);
-    font-size: 1.6rem;
-    font-weight: 800;
-    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
     color: #1a202c;
 }
 
 .project-content p {
-    font-size: 1.05rem;
-    line-height: 1.7;
+    font-size: 0.95rem;
+    line-height: 1.6;
     color: #4a5568;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     flex: 1;
 }
 
 .project-links {
-    font-size: 0.9rem;
-    font-weight: 700;
+    font-size: 0.85rem;
+    font-weight: 600;
     display: flex;
-    gap: 1.5rem;
+    gap: 1rem;
     flex-wrap: wrap;
-    padding-top: 1.5rem;
+    padding-top: 1rem;
     border-top: 1px solid #f1f3f5;
 }
 
 .project-links a {
     color: var(--color-accent);
     text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: 0.3s;
+    letter-spacing: 0.5px;
 }
 
 .project-links a:hover {
     color: #034c8a;
-    letter-spacing: 1.5px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
+    .mywork-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
     .mywork-container {
         grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-    .project-image {
-        height: 280px;
-    }
-    .project-content {
-        padding: 1.5rem;
     }
 }
