@@ -4,6 +4,7 @@ import ustep_img from '../assets/project3.png'
 import project4_img from '../assets/project4.png'
 import project5_img from '../assets/project5.png'
 import project6_img from '../assets/project6.png'
+import airflow_img from '../assets/airflow-project.png'
 
 const mywork_data = [
     {
@@ -56,6 +57,15 @@ const mywork_data = [
         w_img: project6_img,
         w_github: "https://github.com/subhashyadavon/HealthyReceipe.git",
         w_link: "https://healthyreceipegit-dy3sbap7rezfp8mveyykr4.streamlit.app/"
+    },
+    {
+        w_no: 7,
+        w_name: "Tech Market Intelligence Dashboard",
+        w_desc: "Transforming fragmented and messy job market data into actionable, real-time insights for career and salary decision-making.",
+        w_img: airflow_img,
+        w_github: "https://github.com/subhashyadavon/airflow-project.git",
+        w_link: "#",
+        w_link_label: "Live Demo Coming Soon"
     },
 ]
 
