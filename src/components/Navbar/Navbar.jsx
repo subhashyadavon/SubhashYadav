@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import './Navbar.css'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import { HomeIcon, UserIcon, BriefcaseIcon, BookIcon, CodeIcon, GridIcon, MailIcon } from './NavIcons'

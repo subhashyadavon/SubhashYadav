@@ -1,4 +1,3 @@
-import React from 'react'
 import './Footer.css'
 import SocialLinks from '../SocialLinks/SocialLinks'
 

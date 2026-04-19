@@ -1,4 +1,3 @@
-import React from 'react'
 import './About.css'
 import profile_img from '../../assets/subhash.jpeg'
 

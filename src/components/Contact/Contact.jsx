@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import './Contact.css'
 
 const Contact = () => {
@@ -34,7 +34,7 @@ const Contact = () => {
             } else {
                 setErrorMsg("Error sending message. Please try again later.");
             }
-        } catch (error) {
+        } catch {
             setErrorMsg("Network error. Please try again.");
         } finally {
             setIsSubmitting(false);

@@ -1,4 +1,3 @@
-import React from 'react'
 import './Experience.css'
 
 const Experience = () => {
@@ -27,7 +26,7 @@ const Experience = () => {
                         <li>Validated system efficiency across multiple models on Intel i7 hardware, achieving a peak real-time rate of ~21 FPS with a minimal detection latency of ~49ms using YOLOv8 architectures.</li>
                         <li>Justified the adoption of YOLOv8-Small, which delivered a 5.5X gain in detection density and a +446% accuracy breakthrough compared to legacy Nano-scale models.</li>
                         <li>Developed a multi-stage verification funnel utilizing silhouette aspect-ratio checks (&lt; 0.85), center-frame positioning bias, and threat-priority policies to eliminate environmental false positives.</li>
-                        <li>Engineered a modular model registry that allows for "Live Swaps" of object detection models in system memory without interrupting the active RTSP video stream.</li>
+                        <li>Engineered a modular model registry that allows for &quot;Live Swaps&quot; of object detection models in system memory without interrupting the active RTSP video stream.</li>
                     </ul>
                 </div>
             </div>

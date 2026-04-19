@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import './Hero.css'
 import SocialLinks from '../SocialLinks/SocialLinks'
 
+const titles = ["Software Engineer", "Problem Solver", "Deep Thinker", "Continuous Learner"];
+
 const Hero = () => {
-    const titles = ["Software Engineer", "Problem Solver", "Deep Thinker", "Continuous Learner"];
     const [titleIndex, setTitleIndex] = useState(0);
     const [text, setText] = useState('');
     const [isDeleting, setIsDeleting] = useState(false);
