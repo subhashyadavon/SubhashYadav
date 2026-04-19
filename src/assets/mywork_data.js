@@ -13,8 +13,6 @@ const mywork_data = [
         w_desc: "An intelligent chat application that combines speech-to-text, vector search, and retrieval-augmented generation (RAG) to enable natural, voice-driven conversations.",
         w_img: project1_img,
         w_github: "https://github.com/subhashyadavon/voice-driven-qna-bot.git",
-        w_link: "#",
-        w_link_label: "under process"
     },
     {
         w_no: 2,
@@ -64,8 +62,6 @@ const mywork_data = [
         w_desc: "Transforming fragmented and messy job market data into actionable, real-time insights for career and salary decision-making.",
         w_img: airflow_img,
         w_github: "https://github.com/subhashyadavon/airflow-project.git",
-        w_link: "#",
-        w_link_label: "Live Demo Coming Soon"
     },
 ]
 
