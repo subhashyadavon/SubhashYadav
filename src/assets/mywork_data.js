@@ -5,6 +5,8 @@ import project4_img from '../assets/project4.png'
 import project5_img from '../assets/project5.png'
 import project6_img from '../assets/project6.png'
 import airflow_img from '../assets/airflow-project.png'
+import database_img from '../assets/database.png'
+
 
 const mywork_data = [
     {
@@ -63,6 +65,14 @@ const mywork_data = [
         w_img: airflow_img,
         w_github: "https://github.com/subhashyadavon/airflow-project.git",
     },
+    {
+        w_no: 8,
+        w_name: "CineBase: Media Management System",
+        w_desc: "Developed as part of the Introduction to Database course, this project implements a robust database system for managing and querying complex media datasets.",
+        w_img: database_img,
+        w_github: "https://github.com/subhashyadavon/DatabaseProject.git",
+    },
+
 ]
 
 export default mywork_data;
