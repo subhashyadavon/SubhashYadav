@@ -14,6 +14,15 @@ const MyWork = () => {
                         <div className="project-content">
                             <h3>{work.w_name}</h3>
                             <p>{work.w_desc}</p>
+                            
+                            {work.w_tags && (
+                                <div className="project-tags">
+                                    {work.w_tags.map((tag, idx) => (
+                                        <span key={idx} className="project-tag">{tag}</span>
+                                    ))}
+                                </div>
+                            )}
+
                             <p className="project-links">
                                 <a href={work.w_github} target="_blank" rel="noopener noreferrer">
                                     [Source Code / GitHub]

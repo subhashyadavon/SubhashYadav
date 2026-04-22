@@ -18,7 +18,8 @@ const mywork_data = [
         w_img: project2_img,
         w_github: "https://github.com/subhashyadavon/CarDex-Prod",
         w_medium: "https://medium.com/p/9433319f9bd2?postPublishedType=initial",
-        w_link: "https://app-cardex.azurewebsites.net/"
+        w_link: "https://app-cardex.azurewebsites.net/",
+        w_tags: ["C#", "React", "PostgreSQL", "Docker", "Terraform", "GitHub Actions"]
     },
     {
         w_no: 2,
@@ -27,7 +28,8 @@ const mywork_data = [
         w_img: ustep_img,
         w_github: "https://github.com/subhashyadavon/ustep",
         w_medium: "https://medium.com/p/598c8edbbba6?postPublishedType=initial",
-        w_apk: "https://drive.google.com/file/d/1KFODnr0fi8JvtacVrN0B5JMXcYUgxL-5/view?usp=sharing"
+        w_apk: "https://drive.google.com/file/d/1KFODnr0fi8JvtacVrN0B5JMXcYUgxL-5/view?usp=sharing",
+        w_tags: ["Java", "Android Studio", "HSQLDB", "Python", "JUnit", "GitHub Actions"]
     },
     {
         w_no: 3,
@@ -35,6 +37,7 @@ const mywork_data = [
         w_desc: "An intelligent chat application that combines speech-to-text, vector search, and retrieval-augmented generation (RAG) to enable natural, voice-driven conversations.",
         w_img: project1_img,
         w_github: "https://github.com/subhashyadavon/voice-driven-qna-bot.git",
+        w_tags: ["Python", "FastAPI", "LangChain", "RAG"]
     },
 
     {
@@ -43,7 +46,8 @@ const mywork_data = [
         w_desc: "A To-Do web app that demonstrates key Human–Computer Interaction (HCI) principles through a simple, intuitive, and user-centered design.",
         w_img: project4_img,
         w_github: "https://github.com/subhashyadavon/todo-app",
-        w_link: "https://subhashyadavon.github.io/todo-app/"
+        w_link: "https://subhashyadavon.github.io/todo-app/",
+        w_tags: ["HTML", "CSS", "JavaScript"]
     },
     {
         w_no: 5,
@@ -51,7 +55,8 @@ const mywork_data = [
         w_desc: "Movie review sentiment classifier built using TF-IDF and Logistic Regression. Real-time inference for Positive or Negative sentiment.",
         w_img: project5_img,
         w_github: "https://github.com/subhashyadavon/imdb_nlp.git",
-        w_link: "https://github.com/subhashyadavon/imdb_nlp/pkgs/container/imdb-nlp"
+        w_link: "https://github.com/subhashyadavon/imdb_nlp/pkgs/container/imdb-nlp",
+        w_tags: ["Python", "NLP", "scikit-learn"]
     },
     {
         w_no: 6,
@@ -59,7 +64,8 @@ const mywork_data = [
         w_desc: "AI-powered application that suggests healthy recipes based on ingredients identified from a photo upload.",
         w_img: project6_img,
         w_github: "https://github.com/subhashyadavon/HealthyReceipe.git",
-        w_link: "https://healthyreceipegit-dy3sbap7rezfp8mveyykr4.streamlit.app/"
+        w_link: "https://healthyreceipegit-dy3sbap7rezfp8mveyykr4.streamlit.app/",
+        w_tags: ["Python", "Streamlit", "AI/ML"]
     },
     {
         w_no: 7,
@@ -67,6 +73,7 @@ const mywork_data = [
         w_desc: "Transforming fragmented and messy job market data into actionable, real-time insights for career and salary decision-making.",
         w_img: airflow_img,
         w_github: "https://github.com/subhashyadavon/airflow-project.git",
+        w_tags: ["Apache Airflow", "Python", "PostgreSQL", "AWS S3"]
     },
     {
         w_no: 8,
@@ -74,6 +81,7 @@ const mywork_data = [
         w_desc: "Developed as part of the Introduction to Database course, this project implements a robust database system for managing and querying complex media datasets.",
         w_img: database_img,
         w_github: "https://github.com/subhashyadavon/DatabaseProject.git",
+        w_tags: ["Relational Databases", "SQL", "DBMS"]
     },
     {
         w_no: 9,
@@ -81,6 +89,7 @@ const mywork_data = [
         w_desc: "A custom Unix shell implemented in C for the Operating Systems course, featuring command parsing, process execution, and system-level interactions.",
         w_img: shell_img,
         w_github: "https://github.com/subhashyadavon/NQPShell.git",
+        w_tags: ["C", "Linux", "OS Concepts"]
     },
 
 
