@@ -31,9 +31,11 @@ const Publications = () => {
                                 <a href={pub.p_pdf} target="_blank" rel="noopener noreferrer" className={pub.p_pdf === "#" ? "link-disabled" : ""}>
                                     [ {pub.p_pdf === "#" ? "Paper Coming Soon" : "View Research Paper"} ]
                                 </a>
-                                <a href={pub.p_github} target="_blank" rel="noopener noreferrer">
-                                    [ Source Repo ]
-                                </a>
+                                {pub.p_github !== "#" && (
+                                    <a href={pub.p_github} target="_blank" rel="noopener noreferrer">
+                                        [ Source Repo ]
+                                    </a>
+                                )}
                             </div>
                         </div>
                     ))}
