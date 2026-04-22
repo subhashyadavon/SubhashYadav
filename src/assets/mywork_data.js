@@ -1,12 +1,12 @@
-import project1_img from '../assets/project1.png'
-import project2_img from '../assets/project2.png'
-import ustep_img from '../assets/project3.png'
-import project4_img from '../assets/project4.png'
-import project5_img from '../assets/project5.png'
-import project6_img from '../assets/project6.png'
-import airflow_img from '../assets/airflow-project.png'
-import database_img from '../assets/database.png'
-import shell_img from '../assets/shell.png'
+import project1_img from './project1.png'
+import project2_img from './project2.png'
+import ustep_img from './project3.png'
+import project4_img from './project4.png'
+import project5_img from './project5.png'
+import project6_img from './project6.png'
+import airflow_img from './airflow-project.png'
+import database_img from './database.png'
+import shell_img from './shell.png'
 
 
 
