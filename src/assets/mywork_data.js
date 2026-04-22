@@ -13,13 +13,6 @@ import shell_img from './shell.png'
 const mywork_data = [
     {
         w_no: 1,
-        w_name: "RAG Chat App",
-        w_desc: "An intelligent chat application that combines speech-to-text, vector search, and retrieval-augmented generation (RAG) to enable natural, voice-driven conversations.",
-        w_img: project1_img,
-        w_github: "https://github.com/subhashyadavon/voice-driven-qna-bot.git",
-    },
-    {
-        w_no: 2,
         w_name: "CarDex",
         w_desc: "Cardex is a digital trading card game where players collect, trade, and race cars. Features car collection and high-stakes racing.",
         w_img: project2_img,
@@ -28,7 +21,7 @@ const mywork_data = [
         w_link: "https://app-cardex.azurewebsites.net/"
     },
     {
-        w_no: 3,
+        w_no: 2,
         w_name: "UStep",
         w_desc: "Student-focused academic application simplify course management, grade tracking, and academic planning. Monitor grades and explore course reviews.",
         w_img: ustep_img,
@@ -36,6 +29,14 @@ const mywork_data = [
         w_medium: "https://medium.com/p/598c8edbbba6?postPublishedType=initial",
         w_apk: "https://drive.google.com/file/d/1KFODnr0fi8JvtacVrN0B5JMXcYUgxL-5/view?usp=sharing"
     },
+    {
+        w_no: 3,
+        w_name: "RAG Chat App",
+        w_desc: "An intelligent chat application that combines speech-to-text, vector search, and retrieval-augmented generation (RAG) to enable natural, voice-driven conversations.",
+        w_img: project1_img,
+        w_github: "https://github.com/subhashyadavon/voice-driven-qna-bot.git",
+    },
+
     {
         w_no: 4,
         w_name: "HCI To-Do App",
