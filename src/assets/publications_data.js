@@ -1,4 +1,6 @@
 
+import reliability_img from './reliability_and_release_velocity_paper.png'
+
 const publications_data = [
     {
         p_no: 1,
@@ -9,6 +11,7 @@ const publications_data = [
         p_venue: "Software Engineering 2 (SWE-2)",
         p_pdf: "/papers/reliability_and_release_velocity.pdf",
         p_github: "#",
+        p_img: reliability_img,
         p_tags: ["DevOps", "Site Reliability Engineering", "CI/CD"]
     }
 ];
