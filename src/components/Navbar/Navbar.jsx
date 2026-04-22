@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import './Navbar.css'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
-import { HomeIcon, UserIcon, BriefcaseIcon, BookIcon, CodeIcon, GridIcon, MailIcon } from './NavIcons'
+import { HomeIcon, UserIcon, BriefcaseIcon, BookIcon, CodeIcon, GridIcon, MailIcon, FileTextIcon } from './NavIcons'
 
 const Navbar = () => {
   const [activeSection, setActiveSection] = useState('home');
@@ -15,7 +15,7 @@ const Navbar = () => {
       });
     }, { threshold: 0.5 }); // trigger when halfway visible
 
-    const sectionIds = ['home', 'about', 'experience', 'education', 'techstack', 'work', 'contact'];
+    const sectionIds = ['home', 'about', 'experience', 'education', 'techstack', 'work', 'publications', 'contact'];
     sectionIds.forEach((id) => {
       const element = document.getElementById(id);
       if (element) {
@@ -36,6 +36,7 @@ const Navbar = () => {
         <li><AnchorLink className={`anchor-link ${activeSection === 'education' ? 'active' : ''}`} offset={100} href='#education'><BookIcon /><span className="nav-text">Education</span></AnchorLink></li>
         <li><AnchorLink className={`anchor-link ${activeSection === 'techstack' ? 'active' : ''}`} offset={100} href='#techstack'><CodeIcon /><span className="nav-text">Skills</span></AnchorLink></li>
         <li><AnchorLink className={`anchor-link ${activeSection === 'work' ? 'active' : ''}`} offset={100} href='#work'><GridIcon /><span className="nav-text">Work</span></AnchorLink></li>
+        <li><AnchorLink className={`anchor-link ${activeSection === 'publications' ? 'active' : ''}`} offset={100} href='#publications'><FileTextIcon /><span className="nav-text">Research</span></AnchorLink></li>
         <li><AnchorLink className={`anchor-link ${activeSection === 'contact' ? 'active' : ''}`} offset={100} href='#contact'><MailIcon /><span className="nav-text">Contact</span></AnchorLink></li>
       </ul>
     </nav>

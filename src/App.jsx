@@ -6,6 +6,7 @@ import About from './components/About/About'
 import Experience from './components/Experience/Experience'
 import Education from './components/Education/Education'
 import MyWork from './components/MyWork/MyWork'
+import Publications from './components/Publications/Publications'
 import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer'
 import Preloader from './components/Preloader/Preloader'
@@ -35,6 +36,7 @@ const App = () => {
           <Education />
           <TechStack />
           <MyWork />
+          <Publications />
           <Contact />
           <Footer />
         </main>
