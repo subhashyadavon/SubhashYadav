@@ -32,8 +32,8 @@
 
 .publication-image {
     flex-shrink: 0;
-    width: 280px;
-    height: 200px;
+    width: 400px;
+    height: 300px;
     border-radius: 8px;
     overflow: hidden;
     background: #f8f9fa;
