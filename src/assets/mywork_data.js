@@ -6,6 +6,8 @@ import project5_img from '../assets/project5.png'
 import project6_img from '../assets/project6.png'
 import airflow_img from '../assets/airflow-project.png'
 import database_img from '../assets/database.png'
+import shell_img from '../assets/shell.png'
+
 
 
 const mywork_data = [
@@ -72,6 +74,14 @@ const mywork_data = [
         w_img: database_img,
         w_github: "https://github.com/subhashyadavon/DatabaseProject.git",
     },
+    {
+        w_no: 9,
+        w_name: "NQP Shell",
+        w_desc: "A custom Unix shell implemented in C for the Operating Systems course, featuring command parsing, process execution, and system-level interactions.",
+        w_img: shell_img,
+        w_github: "https://github.com/subhashyadavon/NQPShell.git",
+    },
+
 
 ]
 
