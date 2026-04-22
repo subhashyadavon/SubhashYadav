@@ -8,6 +8,16 @@
     gap: 2rem;
 }
 
+.publications-coming-soon {
+    background: #f8f9fa;
+    border-radius: 12px;
+    padding: 3rem;
+    text-align: center;
+    color: #718096;
+    font-style: italic;
+    border: 1px dashed #cbd5e0;
+}
+
 .publication-item {
     background: #fff;
     border-radius: 12px;
