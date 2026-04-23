@@ -5,30 +5,38 @@ const TechStack = () => {
         <section id='techstack' className='techstack'>
             <h2>Technical Skills</h2>
             <div className="skills-container">
+
                 <div className="skill-category">
-                    <h3>Frontend</h3>
-                    <p>React, Next.js, TypeScript, JavaScript, HTML5, CSS3</p>
+                    <h3>Languages</h3>
+                    <p><strong>Proficient:</strong> Python, Java, JavaScript, C, SQL</p>
+                    <p><strong>Familiar:</strong> C#, C++, TypeScript</p>
                 </div>
 
                 <div className="skill-category">
-                    <h3>Backend</h3>
-                    <p>Node.js, Express, C#, .NET Core, Java, Spring Boot, Python, FastAPI, C, C++</p>
+                    <h3>Web & Backend</h3>
+                    <p><strong>Proficient:</strong> React, FastAPI, .NET Core, HTML5, CSS3</p>
+                    <p><strong>Familiar:</strong> Express, Spring Boot, Node.js, Next.js</p>
                 </div>
 
                 <div className="skill-category">
                     <h3>Databases</h3>
-                    <p>MongoDB, PostgreSQL</p>
+                    <p><strong>Proficient:</strong> PostgreSQL, SQLite</p>
+                    <p><strong>Familiar:</strong> MongoDB, MSSQL</p>
                 </div>
 
                 <div className="skill-category">
                     <h3>AI / ML</h3>
-                    <p>LangChain, LangGraph, TensorFlow, PyTorch, Large Language Models (LLMs), Natural Language Processing (NLP), AI Agents, Vector Databases</p>
+                    <p><strong>Proficient:</strong> LangChain, NLP, scikit-learn, Vector Databases</p>
+                    <p><strong>Exploring:</strong> PyTorch, TensorFlow, LangGraph, AI Agents</p>
                 </div>
 
                 <div className="skill-category">
                     <h3>Infrastructure & Tools</h3>
-                    <p>Docker, Kubernetes, AWS, Azure, GCP, Git, Terraform, Linux</p>
+                    <p><strong>Proficient:</strong> Docker, Git, Linux, AWS (S3, EC2), Apache Airflow</p>
+                    <p><strong>Familiar:</strong> Azure (App Service, Blob Storage), GitHub Actions</p>
+                    <p><strong>Exploring:</strong> Kubernetes, Terraform, GCP</p>
                 </div>
+
             </div>
         </section>
     )

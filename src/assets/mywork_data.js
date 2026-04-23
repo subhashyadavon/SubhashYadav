@@ -60,7 +60,7 @@ const mywork_data = [
     },
     {
         w_no: 6,
-        w_name: "Healthy Receipe",
+        w_name: "Healthy Recipe",
         w_desc: "AI-powered application that suggests healthy recipes based on ingredients identified from a photo upload.",
         w_img: project6_img,
         w_github: "https://github.com/subhashyadavon/HealthyReceipe.git",
