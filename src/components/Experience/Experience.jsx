@@ -34,14 +34,6 @@ const Experience = () => {
             <div className="experience-category">
                 <h3>Other Experience</h3>
                 <div className="experience-item">
-                    <h4>Open-Source Contributor</h4>
-                    <p><em>Various Projects | September 2025 - Present</em></p>
-                    <ul>
-                        <li>Contributed to identifying and fixing bugs, and improving documentation in major open-source projects.</li>
-                    </ul>
-                </div>
-
-                <div className="experience-item">
                     <h4>Customer Service Representative</h4>
                     <p><em>Sobeys | May 2023 - Present</em></p>
                     <ul>
