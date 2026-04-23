@@ -36,7 +36,7 @@ const Navbar = () => {
         <li><AnchorLink className={`anchor-link ${activeSection === 'education' ? 'active' : ''}`} offset={100} href='#education'><BookIcon /><span className="nav-text">Education</span></AnchorLink></li>
         <li><AnchorLink className={`anchor-link ${activeSection === 'techstack' ? 'active' : ''}`} offset={100} href='#techstack'><CodeIcon /><span className="nav-text">Skills</span></AnchorLink></li>
         <li><AnchorLink className={`anchor-link ${activeSection === 'work' ? 'active' : ''}`} offset={100} href='#work'><GridIcon /><span className="nav-text">Work</span></AnchorLink></li>
-        <li><AnchorLink className={`anchor-link ${activeSection === 'publications' ? 'active' : ''}`} offset={100} href='#publications'><FileTextIcon /><span className="nav-text">Research</span></AnchorLink></li>
+        <li><AnchorLink className={`anchor-link ${activeSection === 'publications' ? 'active' : ''}`} offset={100} href='#publications'><FileTextIcon /><span className="nav-text">Paper</span></AnchorLink></li>
         <li><AnchorLink className={`anchor-link ${activeSection === 'contact' ? 'active' : ''}`} offset={100} href='#contact'><MailIcon /><span className="nav-text">Contact</span></AnchorLink></li>
       </ul>
     </nav>

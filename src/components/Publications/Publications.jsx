@@ -4,7 +4,7 @@ import publications_data from '../../assets/publications_data'
 const Publications = () => {
     return (
         <section id='publications' className='publications'>
-            <h2>Research & Publications</h2>
+            <h2>Paper</h2>
             {publications_data.length === 0 ? (
                 <div className="publications-coming-soon">
                     <p>Academic papers and research publications will be added here soon.</p>
