@@ -12,7 +12,7 @@ const About = () => {
                     <img src={profile_img} alt="Subhash Yadav" />
                 </div>
                 <div className="about-text">
-                    <p>Fourth-year Computer Science student at the University of Manitoba, passionate about building real-world systems and exploring AI/ML. I enjoy tackling hard problems — from computer vision pipelines to data engineering — and I'm always looking for the next thing to learn and build.</p>
+                    <p>Final-year Computer Science student at the University of Manitoba passionate about building real-world systems and exploring AI/ML. I enjoy solving challenging problems across software engineering, computer vision, and data systems, and I’m always looking for new things to learn and build.</p>
                     <a className="resume-btn" href={resumeUrl} target="_blank" rel="noopener noreferrer">
                         View Curriculum Vitae / Resume
                     </a>
