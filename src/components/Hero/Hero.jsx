@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import './Hero.css'
 import SocialLinks from '../SocialLinks/SocialLinks'
 
-const titles = ["Software Engineer", "Problem Solver", "Deep Thinker", "Continuous Learner"];
+const titles = ["Engineer", "Problem Solver", "Deep Thinker", "Continuous Learner"];
 
 const Hero = () => {
     const [titleIndex, setTitleIndex] = useState(0);
@@ -38,7 +38,7 @@ const Hero = () => {
             <div className="hero-content">
                 <div className="hero-text-container">
                     <h1><span className="highlight">Subhash Yadav</span></h1>
-                    <h2 className="typing-text">I am a <span>{text}</span><span className="cursor">|</span></h2>
+                    <h2 className="typing-text">I am {/^[aeiou]/i.test(text) ? 'an' : 'a'} <span>{text}</span><span className="cursor">|</span></h2>
                     <SocialLinks />
                 </div>
             </div>
