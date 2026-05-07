@@ -31,16 +31,6 @@ const Experience = () => {
                 </div>
             </div>
 
-            <div className="experience-category">
-                <h3>Other Experience</h3>
-                <div className="experience-item">
-                    <h4>Customer Service Representative</h4>
-                    <p><em>Sobeys | May 2023 - Present</em></p>
-                    <ul>
-                        <li>Provided friendly and efficient customer service in a fast-paced retail grocery environment.</li>
-                    </ul>
-                </div>
-            </div>
         </section>
     )
 }
