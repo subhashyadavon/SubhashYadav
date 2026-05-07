@@ -65,23 +65,35 @@
 }
 
 .project-link {
-    margin: 1rem 0 !important;
+    margin: 1.5rem 0 !important;
 }
 
 .project-link a {
     color: #0563af;
     text-decoration: none;
     font-weight: 600;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     display: inline-flex;
     align-items: center;
-    gap: 0.5rem;
-    transition: color 0.2s ease, transform 0.2s ease;
+    gap: 0.6rem;
+    padding: 0.6rem 1.2rem;
+    border: 2px solid #0563af;
+    border-radius: 8px;
+    background: transparent;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 .project-link a:hover {
-    color: #044d88;
-    transform: translateX(5px);
+    color: #fff;
+    background: #0563af;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(5, 99, 175, 0.2);
+}
+
+.project-link a:active {
+    transform: translateY(0);
 }
 
 .experience-tabs, .experience-line, .timeline-dot, .experience-logo {

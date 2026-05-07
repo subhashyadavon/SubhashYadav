@@ -21,7 +21,7 @@ const Experience = () => {
                 <div className="experience-item">
                     <h4>ML and Software Engineer</h4>
                     <p><em>BIL Security Service Ltd. | January 2026 - April 2026</em></p>
-                    <p className="project-link"><a href="https://github.com/Onyelechie/bil_security_ml" target="_blank" rel="noopener noreferrer">View Source Code on GitHub →</a></p>
+                    <p className="project-link"><a href="https://github.com/Onyelechie/bil_security_ml" target="_blank" rel="noopener noreferrer">📂 View Source Code on GitHub →</a></p>
                     <ul>
                         <li>Measured and documented system performance across multiple models on Intel i7 hardware — achieving ~21 FPS throughput and ~49ms detection latency using YOLOv8 architectures.</li>
                         <li>Benchmarked YOLOv8-Small against legacy Nano-scale models and recommended its adoption based on a 5.5X gain in detection density and significantly higher accuracy.</li>
