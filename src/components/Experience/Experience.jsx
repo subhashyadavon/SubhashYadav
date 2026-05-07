@@ -19,7 +19,7 @@ const Experience = () => {
             <div className="experience-category">
                 <h3>Industrial Projects</h3>
                 <div className="experience-item">
-                    <h4>Applied AI Systems Engineer</h4>
+                    <h4>Applied ML Engineer and SWE Engineer</h4>
                     <p><em>BIL Security Service Ltd. | January 2026 - April 2026</em></p>
                     <ul>
                         <li>Built a 10-second rolling ring-buffer that selectively extracts and analyzes critical video segments from live RTSP streams before central server ingestion.</li>
