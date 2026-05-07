@@ -64,6 +64,26 @@
     margin-bottom: 0.5rem;
 }
 
+.project-link {
+    margin: 1rem 0 !important;
+}
+
+.project-link a {
+    color: #0563af;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.project-link a:hover {
+    color: #044d88;
+    transform: translateX(5px);
+}
+
 .experience-tabs, .experience-line, .timeline-dot, .experience-logo {
     display: none !important;
 }
