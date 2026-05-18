@@ -8,6 +8,16 @@ const Experience = () => {
             <div className="experience-category">
                 <h3>Technical Experience</h3>
                 <div className="experience-item">
+                    <h4>Software Developer Intern</h4>
+                    <p><em>Superstars · Remote | May 2026 - Present</em></p>
+                    <ul>
+                        <li>Developing front-end features for a Video Professional Network using Angular to build responsive UIs.</li>
+                        <li>Implementing API integration with Postman to connect Angular components with backend services.</li>
+                        <li>Contributing to Jobs & Talent Video Board development, translating mobile functionality to web platform.</li>
+                        <li>Driving UI/UX enhancements to optimize navigation flow and deliver a faster, cleaner web application.</li>
+                    </ul>
+                </div>
+                <div className="experience-item">
                     <h4>Software Engineer for AI Training Data</h4>
                     <p><em>Outlier AI · Freelance | May 2025 - July 2025</em></p>
                     <ul>
