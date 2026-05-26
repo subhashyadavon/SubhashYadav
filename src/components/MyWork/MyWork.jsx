@@ -8,9 +8,11 @@ const MyWork = () => {
             <div className="mywork-container">
                 {mywork_data.map((work, index) => (
                     <div key={index} className="project-item">
-                        <div className="project-image">
-                            <img src={work.w_img} alt={work.w_name} />
-                        </div>
+                        {work.w_img && (
+                            <div className="project-image">
+                                <img src={work.w_img} alt={work.w_name} />
+                            </div>
+                        )}
                         <div className="project-content">
                             <h3>{work.w_name}</h3>
                             <p>{work.w_desc}</p>

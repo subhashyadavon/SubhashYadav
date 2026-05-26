@@ -1,4 +1,4 @@
-import project1_img from './project1.png'
+
 import project2_img from './project2.png'
 import ustep_img from './project3.png'
 import project4_img from './project4.png'
@@ -35,7 +35,6 @@ const mywork_data = [
         w_no: 3,
         w_name: "RAG Chat App",
         w_desc: "An intelligent chat application that combines speech-to-text, vector search, and retrieval-augmented generation (RAG) to enable natural, voice-driven conversations.",
-        w_img: project1_img,
         w_github: "https://github.com/subhashyadavon/voice-driven-qna-bot.git",
         w_tags: ["Python", "FastAPI", "LangChain", "RAG"]
     },
