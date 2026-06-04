@@ -12,7 +12,7 @@ const About = () => {
                     <img src={profile_img} alt="Subhash Yadav" />
                 </div>
                 <div className="about-text">
-                    <p>Final-year Computer Science student at the University of Manitoba passionate about software engineering and building impactful real-world applications. Interested in full-stack development, cloud technologies, AI/ML, and scalable data systems, with a strong focus on continuous learning and problem-solving.</p>
+                    <p>Computer Science student with a strong interest in building scalable applications and backend services. I am continuously learning and enjoy transforming complex technical challenges into practical, reliable systems. I am adaptable and equipped with the foundational tools to tackle a wide range of tasks across software development, data systems, and applied AI.</p>
                     <a className="resume-btn" href={resumeUrl} target="_blank" rel="noopener noreferrer">
                         View Curriculum Vitae / Resume
                     </a>

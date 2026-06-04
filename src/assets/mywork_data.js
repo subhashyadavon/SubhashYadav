@@ -2,11 +2,10 @@
 import project2_img from './project2.png'
 import ustep_img from './project3.png'
 import project4_img from './project4.png'
-import project5_img from './project5.png'
-import project6_img from './project6.png'
+
 import airflow_img from './airflow-project.png'
 import database_img from './database.png'
-import shell_img from './shell.png'
+
 
 
 
@@ -48,24 +47,7 @@ const mywork_data = [
         w_link: "https://subhashyadavon.github.io/todo-app/",
         w_tags: ["HTML", "CSS", "JavaScript"]
     },
-    {
-        w_no: 5,
-        w_name: "IMDB Sentiment Analysis",
-        w_desc: "Movie review sentiment classifier built using TF-IDF and Logistic Regression. Real-time inference for Positive or Negative sentiment.",
-        w_img: project5_img,
-        w_github: "https://github.com/subhashyadavon/imdb_nlp.git",
-        w_link: "https://github.com/subhashyadavon/imdb_nlp/pkgs/container/imdb-nlp",
-        w_tags: ["Python", "NLP", "scikit-learn"]
-    },
-    {
-        w_no: 6,
-        w_name: "Healthy Recipe",
-        w_desc: "AI-powered application that suggests healthy recipes based on ingredients identified from a photo upload.",
-        w_img: project6_img,
-        w_github: "https://github.com/subhashyadavon/HealthyReceipe.git",
-        w_link: "https://healthyreceipegit-dy3sbap7rezfp8mveyykr4.streamlit.app/",
-        w_tags: ["Python", "Streamlit", "AI/ML"]
-    },
+
     {
         w_no: 7,
         w_name: "Tech Market Intelligence Dashboard",
@@ -82,14 +64,7 @@ const mywork_data = [
         w_github: "https://github.com/subhashyadavon/DatabaseProject.git",
         w_tags: ["Relational Databases", "SQL", "DBMS"]
     },
-    {
-        w_no: 9,
-        w_name: "NQP Shell",
-        w_desc: "A custom Unix shell implemented in C for the Operating Systems course, featuring command parsing, process execution, and system-level interactions.",
-        w_img: shell_img,
-        w_github: "https://github.com/subhashyadavon/NQPShell.git",
-        w_tags: ["C", "Linux", "OS Concepts"]
-    },
+
 
 
 ]
