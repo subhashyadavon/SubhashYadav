@@ -17,19 +17,12 @@ const Experience = () => {
                         <li>Driving UI/UX enhancements to optimize navigation flow and deliver a faster, cleaner web application.</li>
                     </ul>
                 </div>
-                <div className="experience-item">
-                    <h4>Software Engineer for AI Training Data</h4>
-                    <p><em>Outlier AI · Freelance | May 2025 - July 2025</em></p>
-                    <ul>
-                        <li>Evaluated AI model responses through systematic prompting and assessment to identify outliers and generate high-quality training data for model improvement.</li>
-                    </ul>
-                </div>
             </div>
 
             <div className="experience-category">
                 <h3>Industrial Projects</h3>
                 <div className="experience-item">
-                    <h4>ML and Software Engineer</h4>
+                    <h4>Software Engineer Intern</h4>
                     <p><em>BIL Security Service Ltd. | January 2026 - April 2026</em></p>
                     <p className="project-link"><a href="https://github.com/Onyelechie/bil_security_ml" target="_blank" rel="noopener noreferrer">Source Code on GitHub ↗</a></p>
                     <ul>
