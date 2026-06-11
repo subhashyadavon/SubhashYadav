@@ -2,9 +2,9 @@
     min-height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: flex-start; /* Align content to the left */
-    padding-left: 240px; /* Indent even more as requested */
-    width: 100vw; /* Span full viewport width */
+    justify-content: flex-start;
+    padding-left: 240px;
+    width: 100%;
     margin-left: 0;
     
     /* Pexels Background */
@@ -12,7 +12,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    
+
     /* Ensure text readability over light background */
     position: relative;
     overflow: hidden;
@@ -65,6 +65,10 @@
     letter-spacing: normal;
 }
 
+.typing-text::after {
+    display: none;
+}
+
 .typing-text span {
     color: var(--color-accent);
     font-weight: 700;
@@ -97,6 +101,19 @@
     }
     .typing-text {
         font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding-left: 70px;
+        padding-right: 1.5rem;
+    }
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    .typing-text {
+        font-size: 1.5rem;
     }
 }
 
