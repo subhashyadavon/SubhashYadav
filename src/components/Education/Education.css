@@ -46,3 +46,12 @@
 .education-line, .education-dot, .education-title {
     display: none !important;
 }
+
+@media (max-width: 600px) {
+    .education-item {
+        padding: 1.25rem;
+    }
+    .education-item h3 {
+        font-size: 1.1rem;
+    }
+}

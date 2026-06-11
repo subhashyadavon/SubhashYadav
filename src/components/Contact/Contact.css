@@ -170,3 +170,12 @@
 .contact-title, .contact-left, .dialog-overlay, .contact-wrapper, .contact-section {
     display: block;
 }
+
+@media (max-width: 600px) {
+    .contact-details, .contact-form {
+        padding: 1.25rem;
+    }
+    .popup-content {
+        padding: 2rem 1.25rem;
+    }
+}

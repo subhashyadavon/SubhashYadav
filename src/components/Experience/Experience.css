@@ -100,3 +100,12 @@
 .experience-tabs, .experience-line, .timeline-dot, .experience-logo {
     display: none !important;
 }
+
+@media (max-width: 600px) {
+    .experience-item {
+        padding: 1.25rem;
+    }
+    .experience-item h3 {
+        font-size: 1.1rem;
+    }
+}
