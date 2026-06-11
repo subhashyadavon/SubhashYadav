@@ -1,8 +1,9 @@
+import { useState } from 'react'
 import './About.css'
 import profile_img from '../../assets/subhash.jpeg'
 
 const About = () => {
-    const resumeUrl = 'https://drive.google.com/file/d/1G9pj_gHWLVIQ7kA9On2vsoj89ZzCh9t7/view?usp=sharing';
+    const [showModal, setShowModal] = useState(false);
 
     return (
         <section id='about' className='about'>
@@ -13,11 +14,20 @@ const About = () => {
                 </div>
                 <div className="about-text">
                     <p>Computer Science student with a strong interest in building scalable applications and backend services. I am continuously learning and enjoy transforming complex technical challenges into practical, reliable systems. I am adaptable and equipped with the foundational tools to tackle a wide range of tasks across software development, data systems, and applied AI.</p>
-                    <a className="resume-btn" href={resumeUrl} target="_blank" rel="noopener noreferrer">
+                    <button className="resume-btn" onClick={() => setShowModal(true)}>
                         View Curriculum Vitae / Resume
-                    </a>
+                    </button>
                 </div>
             </div>
+
+            {showModal && (
+                <div className="resume-modal-overlay" onClick={() => setShowModal(false)}>
+                    <div className="resume-modal" onClick={e => e.stopPropagation()}>
+                        <p>Resume is currently not available.</p>
+                        <button className="resume-modal-close" onClick={() => setShowModal(false)}>Close</button>
+                    </div>
+                </div>
+            )}
         </section>
     )
 }
