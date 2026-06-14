@@ -13,21 +13,18 @@ const mywork_data = [
     {
         w_no: 1,
         w_name: "CarDex",
-        w_desc: "Cardex is a digital trading card game where players collect, trade, and race cars. Features car collection and high-stakes racing.",
+        w_desc: "Cardex is a digital trading card game where players collect, trade, and race cars. Features card collection and racing.",
         w_img: project2_img,
         w_github: "https://github.com/subhashyadavon/CarDex-Prod",
-        w_medium: "https://medium.com/p/9433319f9bd2?postPublishedType=initial",
         w_link: "https://app-cardex.azurewebsites.net/",
         w_tags: ["C#", "React", "PostgreSQL", "Docker", "Terraform", "GitHub Actions"]
     },
     {
         w_no: 2,
         w_name: "UStep",
-        w_desc: "Student-focused academic application simplify course management, grade tracking, and academic planning. Monitor grades and explore course reviews.",
+        w_desc: "Student-focused academic application simplify course management, grade tracking, and academic planning. Helps in monitoring current courses grades.",
         w_img: ustep_img,
         w_github: "https://github.com/subhashyadavon/ustep",
-        w_medium: "https://medium.com/p/598c8edbbba6?postPublishedType=initial",
-        w_apk: "https://drive.google.com/file/d/1KFODnr0fi8JvtacVrN0B5JMXcYUgxL-5/view?usp=sharing",
         w_tags: ["Java", "Android Studio", "HSQLDB", "Python", "JUnit", "GitHub Actions"]
     },
     {
