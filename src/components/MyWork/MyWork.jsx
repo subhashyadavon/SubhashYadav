@@ -1,7 +1,10 @@
+import { useState } from 'react'
 import './MyWork.css'
 import mywork_data from '../../assets/mywork_data'
 
 const MyWork = () => {
+    const [showUnavailableModal, setShowUnavailableModal] = useState(false)
+
     return (
         <section id='work' className='mywork'>
             <h2>Selected Projects</h2>
@@ -16,7 +19,7 @@ const MyWork = () => {
                         <div className="project-content">
                             <h3>{work.w_name}</h3>
                             <p>{work.w_desc}</p>
-                            
+
                             {work.w_tags && (
                                 <div className="project-tags">
                                     {work.w_tags.map((tag, idx) => (
@@ -30,9 +33,15 @@ const MyWork = () => {
                                     [Source Code / GitHub]
                                 </a>
                                 {work.w_link && (
-                                    <> | <a href={work.w_link} target="_blank" rel="noopener noreferrer">
-                                        [Demo / {work.w_link_label || "Live"}]
-                                    </a></>
+                                    work.w_link_unavailable ? (
+                                        <> | <a href="#" onClick={e => { e.preventDefault(); setShowUnavailableModal(true) }}>
+                                            [Demo / {work.w_link_label || "Live"}]
+                                        </a></>
+                                    ) : (
+                                        <> | <a href={work.w_link} target="_blank" rel="noopener noreferrer">
+                                            [Demo / {work.w_link_label || "Live"}]
+                                        </a></>
+                                    )
                                 )}
                                 {work.w_medium && (
                                     <> | <a href={work.w_medium} target="_blank" rel="noopener noreferrer">
@@ -49,6 +58,15 @@ const MyWork = () => {
                     </div>
                 ))}
             </div>
+
+            {showUnavailableModal && (
+                <div className="resume-modal-overlay" onClick={() => setShowUnavailableModal(false)}>
+                    <div className="resume-modal" onClick={e => e.stopPropagation()}>
+                        <p>Not live — Azure free credits exhausted.</p>
+                        <button className="resume-modal-close" onClick={() => setShowUnavailableModal(false)}>Close</button>
+                    </div>
+                </div>
+            )}
         </section>
     )
 }

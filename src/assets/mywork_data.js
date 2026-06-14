@@ -17,6 +17,7 @@ const mywork_data = [
         w_img: project2_img,
         w_github: "https://github.com/subhashyadavon/CarDex-Prod",
         w_link: "https://app-cardex.azurewebsites.net/",
+        w_link_unavailable: true,
         w_tags: ["C#", "React", "PostgreSQL", "Docker", "Terraform", "GitHub Actions"]
     },
     {
