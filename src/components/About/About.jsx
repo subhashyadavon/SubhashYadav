@@ -13,7 +13,7 @@ const About = () => {
                     <img src={profile_img} alt="Subhash Yadav" />
                 </div>
                 <div className="about-text">
-                    <p>Computer Science student with a strong interest in building scalable applications and backend services. I am continuously learning and enjoy transforming complex technical challenges into practical, reliable systems. I am adaptable and equipped with the foundational tools to tackle a wide range of tasks across software development, data systems, and applied AI.</p>
+                    <p>Computer Science student</p>
                     <button className="resume-btn" onClick={() => setShowModal(true)}>
                         View Curriculum Vitae / Resume
                     </button>
