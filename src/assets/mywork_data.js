@@ -18,6 +18,7 @@ const mywork_data = [
         w_github: "https://github.com/subhashyadavon/CarDex-Prod",
         w_link: "https://app-cardex.azurewebsites.net/",
         w_link_unavailable: true,
+        w_medium: "https://medium.com/@subhashyadavon/building-cardex-reflections-on-architecture-concurrency-and-engineering-growth-9433319f9bd2",
         w_tags: ["C#", "React", "PostgreSQL", "Docker", "Terraform", "GitHub Actions"]
     },
     {
@@ -26,6 +27,7 @@ const mywork_data = [
         w_desc: "Student-focused academic application simplify course management, grade tracking, and academic planning. Helps in monitoring current courses grades.",
         w_img: ustep_img,
         w_github: "https://github.com/subhashyadavon/ustep",
+        w_medium: "https://medium.com/@subhashyadavon/ustep-revolutionizing-academic-planning-for-university-students-598c8edbbba6",
         w_tags: ["Java", "Android Studio", "HSQLDB", "Python", "JUnit", "GitHub Actions"]
     },
     {
