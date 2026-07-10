@@ -28,6 +28,7 @@ const mywork_data = [
         w_img: ustep_img,
         w_github: "https://github.com/subhashyadavon/ustep",
         w_medium: "https://medium.com/@subhashyadavon/ustep-revolutionizing-academic-planning-for-university-students-598c8edbbba6",
+        w_apk: "https://github.com/subhashyadavon/ustep/actions/runs/29046721511",
         w_tags: ["Java", "Android Studio", "HSQLDB", "Python", "JUnit", "GitHub Actions"]
     },
     {
