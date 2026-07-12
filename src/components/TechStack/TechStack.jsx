@@ -15,7 +15,7 @@ const TechStack = () => {
                 <div className="skill-category">
                     <h3>Web & Backend</h3>
                     <p><strong>Proficient:</strong> Angular, React, FastAPI, .NET Core, HTML5, CSS3</p>
-                    <p><strong>Familiar:</strong> Node.js</p>
+                    <p><strong>Familiar:</strong> Node.js, jQuery</p>
                 </div>
 
                 <div className="skill-category">
