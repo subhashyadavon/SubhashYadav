@@ -19,7 +19,7 @@ const mywork_data = [
         w_link: "https://app-cardex.azurewebsites.net/",
         w_link_unavailable: true,
         w_medium: "https://medium.com/@subhashyadavon/building-cardex-reflections-on-architecture-concurrency-and-engineering-growth-9433319f9bd2",
-        w_tags: ["C#", "React", "PostgreSQL", "Docker", "Terraform", "GitHub Actions"]
+        w_tags: ["C#", "ASP.NET Core", "React", "PostgreSQL", "Docker", "Terraform", "GitHub Actions"]
     },
     {
         w_no: 2,
