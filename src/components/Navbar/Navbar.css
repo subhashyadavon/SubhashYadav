@@ -72,21 +72,24 @@
 
 @media (max-width: 1024px) {
   .navbar {
-    --nav-icon-size: clamp(30px, 1.42vw + 25.45px, 40px);
+    --nav-icon-size: clamp(32px, 1.23vw + 27.38px, 40px);
     bottom: 16px;
     top: auto;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 12px;
+    right: 12px;
+    transform: none;
     flex-direction: row;
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(8px);
     border-radius: 30px;
-    padding: 6px 10px;
+    padding: 6px 14px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
   }
   .nav-menu {
     flex-direction: row;
-    gap: clamp(4px, 0.6vw, 6px);
+    justify-content: space-between;
+    width: 100%;
+    gap: 4px;
   }
   .anchor-link {
     width: var(--nav-icon-size);
