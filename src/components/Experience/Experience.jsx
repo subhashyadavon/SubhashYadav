@@ -12,10 +12,9 @@ const Experience = () => {
                     <p className="project-link"><a href="https://superstars.co/" target="_blank" rel="noopener noreferrer">superstars.co ↗</a></p>
                 </div>
                 <ul>
-                    <li>Developing front-end features for a Video Professional Network using Angular to build responsive UIs.</li>
-                    <li>Implementing API integration with Postman to connect Angular components with backend services.</li>
-                    <li>Contributing to Jobs & Talent Video Board development, translating mobile functionality to web platform.</li>
-                    <li>Driving UI/UX enhancements to optimize navigation flow and deliver a faster, cleaner web application.</li>
+                    <li>Built responsive Angular front-end features for a Video Professional Network, including the Jobs & Talent Video Board.</li>
+                    <li>Integrated REST APIs with Postman to connect Angular components to backend services.</li>
+                    <li>Improved navigation flow and UI/UX for a faster, cleaner web experience.</li>
                 </ul>
             </div>
 
@@ -26,11 +25,9 @@ const Experience = () => {
                     <p className="project-link"><a href="https://github.com/Onyelechie/bil_security_ml" target="_blank" rel="noopener noreferrer">Source Code on GitHub ↗</a></p>
                 </div>
                 <ul>
-                    <li>Measured and documented system performance across multiple models on Intel i7 hardware — achieving ~21 FPS throughput and ~49ms detection latency using YOLOv8 architectures.</li>
-                    <li>Benchmarked YOLOv8-Small against legacy Nano-scale models and recommended its adoption based on a 5.5X gain in detection density and significantly higher accuracy.</li>
-                    <li>Built a multi-stage verification filter using silhouette aspect-ratio checks (&lt; 0.85), center-frame bias, and threat-priority policies to reduce environmental false positives.</li>
-                    <li>Implemented a modular model registry enabling live swaps of detection models in memory without interrupting the active RTSP video stream.</li>
-                    <li>Built a 10-second rolling ring-buffer that selectively extracts and analyzes critical video segments from live RTSP streams before central server ingestion.</li>
+                    <li>Benchmarked YOLOv8 models on Intel i7 hardware, achieving ~21 FPS / ~49ms latency, and recommended YOLOv8-Small for a 5.5X gain in detection density.</li>
+                    <li>Built a multi-stage verification filter with threat-priority policies to reduce false positives.</li>
+                    <li>Designed a modular model registry and rolling ring-buffer for live model swaps and RTSP segment capture.</li>
                 </ul>
             </div>
 
