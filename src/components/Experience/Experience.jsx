@@ -12,9 +12,10 @@ const Experience = () => {
                     <p className="project-link"><a href="https://superstars.co/" target="_blank" rel="noopener noreferrer">superstars.co ↗</a></p>
                 </div>
                 <ul>
-                    <li>Built responsive Angular front-end features for a Video Professional Network, including the Jobs & Talent Video Board.</li>
-                    <li>Integrated REST APIs with Postman to connect Angular components to backend services.</li>
-                    <li>Improved navigation flow and UI/UX for a faster, cleaner web experience.</li>
+                    <li>Rebuilt the Network Card component for full responsiveness, extracting button logic into a tested module and unifying seven click handlers into one for faster rendering.</li>
+                    <li>Built the Network page's Following, Discover, and Groups tabs with infinite-scroll loading and reusable profile, email, and video popups.</li>
+                    <li>Shipped the Groups feature end-to-end, from admin roles and privacy settings to join-request notifications, fixing critical save bugs along the way.</li>
+                    <li>Standardized responsive breakpoints across five Group pages and resolved state-sync bugs causing stale dropdowns and false success states, improving app-wide reliability.</li>
                 </ul>
             </div>
 
