@@ -35,7 +35,7 @@ const Experience = () => {
             <h3>Other Experience</h3>
 
             <div className="experience-item">
-                <h4>Grader, Computer Science</h4>
+                <h4>Grader/Marker, Computer Science</h4>
                 <div className="experience-header">
                     <p><em>University of Manitoba | September 2026 - Present</em></p>
                 </div>
