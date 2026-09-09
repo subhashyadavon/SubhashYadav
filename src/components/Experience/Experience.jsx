@@ -8,7 +8,7 @@ const Experience = () => {
             <div className="experience-item">
                 <h4>Software Developer Intern</h4>
                 <div className="experience-header">
-                    <p><em>Superstars · Remote | May 2026 - Present</em></p>
+                    <p><em>Superstars · Remote | May 2026 - August 2026</em></p>
                     <p className="project-link"><a href="https://superstars.co/" target="_blank" rel="noopener noreferrer">superstars.co ↗</a></p>
                 </div>
                 <ul>
@@ -29,6 +29,30 @@ const Experience = () => {
                     <li>Benchmarked YOLOv8 models on Intel i7 hardware, achieving ~21 FPS / ~49ms latency, and recommended YOLOv8-Small for a 5.5X gain in detection density.</li>
                     <li>Built a multi-stage verification filter with threat-priority policies to reduce false positives.</li>
                     <li>Designed a modular model registry and rolling ring-buffer for live model swaps and RTSP segment capture.</li>
+                </ul>
+            </div>
+
+            <h3>Other Experience</h3>
+
+            <div className="experience-item">
+                <h4>Grader, Computer Science</h4>
+                <div className="experience-header">
+                    <p><em>University of Manitoba | September 2026 - Present</em></p>
+                </div>
+                <ul>
+                    <li>Grade assignments and projects for Computer Science courses, evaluating code quality, design decisions, and adherence to course rubrics.</li>
+                    <li>Provide consistent, timely feedback to students to support their understanding of core concepts.</li>
+                </ul>
+            </div>
+
+            <div className="experience-item">
+                <h4>Teaching Assistant, Mathematics</h4>
+                <div className="experience-header">
+                    <p><em>University of Manitoba | September 2026 - Present</em></p>
+                </div>
+                <ul>
+                    <li>Hold weekly lab sessions for an undergraduate Mathematics course, helping students work through problem sets.</li>
+                    <li>Support the course instructor with grading and answering student questions on course material.</li>
                 </ul>
             </div>
 
